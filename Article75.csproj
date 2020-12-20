@@ -1,0 +1,1123 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52173DE2-EE32-459B-97BE-3DCDF83D9204}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Article75</RootNamespace>
+    <AssemblyName>Article75</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44387</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FubarCoder.RestSharp.Portable.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=be81bb0f53eab22f, processorArchitecture=MSIL">
+      <HintPath>packages\FubarCoder.RestSharp.Portable.Core.4.0.8\lib\net40\FubarCoder.RestSharp.Portable.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FubarCoder.RestSharp.Portable.HttpClient, Version=4.0.0.0, Culture=neutral, PublicKeyToken=be81bb0f53eab22f, processorArchitecture=MSIL">
+      <HintPath>packages\FubarCoder.RestSharp.Portable.HttpClient.4.0.8\lib\net40\FubarCoder.RestSharp.Portable.HttpClient.dll</HintPath>
+    </Reference>
+    <Reference Include="JsonSubTypes, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\JsonSubTypes.1.2.0\lib\net40\JsonSubTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.11.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.4.0\lib\portable-net40+sl4+win8+wp8\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\referendum-abrogrativo - org.mdb" />
+    <Content Include="App_Data\referendum-abrogrativo - yes.mdb" />
+    <Content Include="App_Data\referendum-abrogrativo.mdb" />
+    <Content Include="assets\css\custom.css" />
+    <Content Include="assets\css\style-blue -.min.css" />
+    <Content Include="assets\css\style-blue.css" />
+    <Content Include="assets\css\style-blue.min.css" />
+    <Content Include="assets\css\style-default.css" />
+    <Content Include="assets\css\style-default.min.css" />
+    <Content Include="assets\css\style-default.min_old.css" />
+    <Content Include="assets\css\style-default_old.css" />
+    <Content Include="assets\css\style-navy.css" />
+    <Content Include="assets\css\style-navy.min.css" />
+    <Content Include="assets\css\style-olive.css" />
+    <Content Include="assets\css\style-olive.min.css" />
+    <Content Include="assets\css\style-orange.css" />
+    <Content Include="assets\css\style-orange.min.css" />
+    <Content Include="assets\css\style-pink.css" />
+    <Content Include="assets\css\style-pink.min.css" />
+    <Content Include="assets\css\style-red.css" />
+    <Content Include="assets\css\style-red.min.css" />
+    <Content Include="assets\css\style-violet.css" />
+    <Content Include="assets\css\style-violet.min.css" />
+    <Content Include="assets\img\404.jpg" />
+    <Content Include="assets\img\association\centro.png" />
+    <Content Include="assets\img\favicon\android-icon-144x144.png" />
+    <Content Include="assets\img\favicon\android-icon-192x192.png" />
+    <Content Include="assets\img\favicon\android-icon-36x36.png" />
+    <Content Include="assets\img\favicon\android-icon-48x48.png" />
+    <Content Include="assets\img\favicon\android-icon-72x72.png" />
+    <Content Include="assets\img\favicon\android-icon-96x96.png" />
+    <Content Include="assets\img\favicon\apple-icon-114x114.png" />
+    <Content Include="assets\img\favicon\apple-icon-120x120.png" />
+    <Content Include="assets\img\favicon\apple-icon-144x144.png" />
+    <Content Include="assets\img\favicon\apple-icon-152x152.png" />
+    <Content Include="assets\img\favicon\apple-icon-180x180.png" />
+    <Content Include="assets\img\favicon\apple-icon-57x57.png" />
+    <Content Include="assets\img\favicon\apple-icon-60x60.png" />
+    <Content Include="assets\img\favicon\apple-icon-72x72.png" />
+    <Content Include="assets\img\favicon\apple-icon-76x76.png" />
+    <Content Include="assets\img\favicon\apple-icon-precomposed.png" />
+    <Content Include="assets\img\favicon\apple-icon.png" />
+    <Content Include="assets\img\favicon\apple-touch-icon.png" />
+    <Content Include="assets\img\favicon\browserconfig.xml" />
+    <Content Include="assets\img\favicon\favicon-16x16.png" />
+    <Content Include="assets\img\favicon\favicon-32x32.png" />
+    <Content Include="assets\img\favicon\favicon-96x96.png" />
+    <Content Include="assets\img\favicon\favicon.ico" />
+    <Content Include="assets\img\favicon\favicon.png" />
+    <Content Include="assets\img\favicon\ms-icon-144x144.png" />
+    <Content Include="assets\img\favicon\ms-icon-150x150.png" />
+    <Content Include="assets\img\favicon\ms-icon-310x310.png" />
+    <Content Include="assets\img\favicon\ms-icon-70x70.png" />
+    <Content Include="assets\img\fondi\1.png" />
+    <Content Include="assets\img\fondi\2.png" />
+    <Content Include="assets\img\fondi\3.png" />
+    <Content Include="assets\img\fondi\4.png" />
+    <Content Include="assets\img\fondi\5.png" />
+    <Content Include="assets\img\fondi\6.png" />
+    <Content Include="assets\img\fondi\bg.jpg" />
+    <Content Include="assets\img\fondi\euro.png" />
+    <Content Include="assets\img\icons\abstract-five.png" />
+    <Content Include="assets\img\icons\abstract-four.png" />
+    <Content Include="assets\img\icons\abstract-one.png" />
+    <Content Include="assets\img\icons\abstract-seven.png" />
+    <Content Include="assets\img\icons\abstract-six.png" />
+    <Content Include="assets\img\icons\abstract-three.png" />
+    <Content Include="assets\img\icons\abstract-two.png" />
+    <Content Include="assets\img\icons\award.png" />
+    <Content Include="assets\img\icons\doc-icon.png" />
+    <Content Include="assets\img\icons\doc-pen-icon.png" />
+    <Content Include="assets\img\icons\people-icon.png" />
+    <Content Include="assets\img\idea\1.png" />
+    <Content Include="assets\img\idea\2.png" />
+    <Content Include="assets\img\idea\3.png" />
+    <Content Include="assets\img\idea\tv.png" />
+    <Content Include="assets\img\map-icon.png" />
+    <Content Include="assets\img\opengraph\fbphoto-476-476.png" />
+    <Content Include="assets\img\petitionz-logo.png" />
+    <Content Include="assets\img\petitionz-logo_small.png" />
+    <Content Include="assets\img\referendum\1.jpg" />
+    <Content Include="assets\img\referendum\2.jpg" />
+    <Content Include="assets\img\referendum\3.jpg" />
+    <Content Include="assets\img\referendum\4.jpg" />
+    <Content Include="assets\img\referendum\5.jpg" />
+    <Content Include="assets\img\referendum\6.jpg" />
+    <Content Include="assets\img\referendum\7.jpg" />
+    <Content Include="assets\img\referendum\no.png" />
+    <Content Include="assets\img\referendum\referenda.png" />
+    <Content Include="assets\img\referendum\yes.png" />
+    <Content Include="assets\img\slider\slider_image_1.png" />
+    <Content Include="assets\img\slider\slider_image_2.png" />
+    <Content Include="assets\img\slider\slider_image_3.png" />
+    <Content Include="assets\img\twittercardimg\twittercard-144-144.png" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\jqcbxgooglemap.js" />
+    <Content Include="assets\js\theme.js" />
+    <Content Include="assets\js\theme.min.js" />
+    <Content Include="assets\switcher\switcher.js" />
+    <Content Include="assets\vendor\bootstrap-material\css\bootstrap-material-design.css" />
+    <Content Include="assets\vendor\bootstrap-material\css\bootstrap-material-design.min.css" />
+    <Content Include="assets\vendor\bootstrap-material\css\ripples.css" />
+    <Content Include="assets\vendor\bootstrap-material\css\ripples.min.css" />
+    <Content Include="assets\vendor\bootstrap-material\js\material.js" />
+    <Content Include="assets\vendor\bootstrap-material\js\material.min.js" />
+    <Content Include="assets\vendor\bootstrap-material\js\ripples.js" />
+    <Content Include="assets\vendor\bootstrap-material\js\ripples.min.js" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="assets\vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="assets\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets\vendor\bootstrap\js\npm.js" />
+    <Content Include="assets\vendor\counterup\jquery.counterup.js" />
+    <Content Include="assets\vendor\counterup\jquery.counterup.min.js" />
+    <Content Include="assets\vendor\datatable\jquery.datatables.min.css" />
+    <Content Include="assets\vendor\datatable\jquery.datatables.min.js" />
+    <Content Include="assets\vendor\fontawesome\css\font-awesome.css" />
+    <Content Include="assets\vendor\fontawesome\css\font-awesome.min.css" />
+    <Content Include="assets\vendor\fontawesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\vendor\jquery-file-upload\angularjs.html" />
+    <Content Include="assets\vendor\jquery-file-upload\basic-plus.html" />
+    <Content Include="assets\vendor\jquery-file-upload\basic.html" />
+    <Content Include="assets\vendor\jquery-file-upload\bower-version-update.js" />
+    <Content Include="assets\vendor\jquery-file-upload\cors\postmessage.html" />
+    <Content Include="assets\vendor\jquery-file-upload\cors\result.html" />
+    <Content Include="assets\vendor\jquery-file-upload\css\demo-ie8.css" />
+    <Content Include="assets\vendor\jquery-file-upload\css\demo.css" />
+    <Content Include="assets\vendor\jquery-file-upload\css\jquery.fileupload-noscript.css" />
+    <Content Include="assets\vendor\jquery-file-upload\css\jquery.fileupload-ui-noscript.css" />
+    <Content Include="assets\vendor\jquery-file-upload\css\jquery.fileupload-ui.css" />
+    <Content Include="assets\vendor\jquery-file-upload\css\jquery.fileupload.css" />
+    <Content Include="assets\vendor\jquery-file-upload\css\style.css" />
+    <Content Include="assets\vendor\jquery-file-upload\img\loading.gif" />
+    <Content Include="assets\vendor\jquery-file-upload\img\progressbar.gif" />
+    <Content Include="assets\vendor\jquery-file-upload\index.html" />
+    <Content Include="assets\vendor\jquery-file-upload\jquery-ui.html" />
+    <Content Include="assets\vendor\jquery-file-upload\js\app.js" />
+    <Content Include="assets\vendor\jquery-file-upload\js\canvas-to-blob.js" />
+    <Content Include="assets\vendor\jquery-file-upload\js\canvas-to-blob.min.js" />
+    <Content Include="assets\vendor\jquery-file-upload\js\cors\jquery.postmessage-transport.js" />
+    <Content Include="assets\vendor\jquery-file-upload\js\cors\jquery.xdr-transport.js" />
+    <Content Include="assets\vendor\jquery-file-upload\js\jquery.fileupload-angular.js" />
+    <Content Include="assets\vendor\jquery-file-upload\js\jquery.fileupload-audio.js" />
+    <Content Include="assets\vendor\jquery-file-upload\js\jquery.fileupload-image.js" />
+    <Content Include="assets\vendor\jquery-file-upload\js\jquery.fileupload-jquery-ui.js" />
+    <Content Include="assets\vendor\jquery-file-upload\js\jquery.fileupload-process.js" />
+    <Content Include="assets\vendor\jquery-file-upload\js\jquery.fileupload-ui.js" />
+    <Content Include="assets\vendor\jquery-file-upload\js\jquery.fileupload-validate.js" />
+    <Content Include="assets\vendor\jquery-file-upload\js\jquery.fileupload-video.js" />
+    <Content Include="assets\vendor\jquery-file-upload\js\jquery.fileupload.js" />
+    <Content Include="assets\vendor\jquery-file-upload\js\jquery.iframe-transport.js" />
+    <Content Include="assets\vendor\jquery-file-upload\js\load-image.all.min.js" />
+    <Content Include="assets\vendor\jquery-file-upload\js\main.js" />
+    <Content Include="assets\vendor\jquery-file-upload\js\vendor\jquery.ui.widget.js" />
+    <Content Include="assets\vendor\jquery-file-upload\server\php\index.php" />
+    <Content Include="assets\vendor\jquery-file-upload\server\php\UploadHandler.php" />
+    <Content Include="assets\vendor\jquery-file-upload\test\index.html" />
+    <Content Include="assets\vendor\jquery-file-upload\test\test.js" />
+    <Content Include="assets\vendor\jquery-sortable\jquery-sortable-min.js" />
+    <Content Include="assets\vendor\jquery-sortable\jquery-sortable.js" />
+    <Content Include="assets\vendor\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <Content Include="assets\vendor\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <Content Include="assets\vendor\jquery-validation-unobtrusive\LICENSE.txt" />
+    <Content Include="assets\vendor\jquery-validation\dist\additional-methods.js" />
+    <Content Include="assets\vendor\jquery-validation\dist\additional-methods.min.js" />
+    <Content Include="assets\vendor\jquery-validation\dist\jquery.validate.js" />
+    <Content Include="assets\vendor\jquery-validation\dist\jquery.validate.min.js" />
+    <Content Include="assets\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="assets\vendor\magnific\jquery.magnific-popup.js" />
+    <Content Include="assets\vendor\magnific\magnific-popup.css" />
+    <Content Include="assets\vendor\mustache\mustache.js" />
+    <Content Include="assets\vendor\mustache\mustache.min.js" />
+    <Content Include="assets\vendor\owlcarousel\ajax-loader.gif" />
+    <Content Include="assets\vendor\owlcarousel\owl.carousel.css" />
+    <Content Include="assets\vendor\owlcarousel\owl.carousel.js" />
+    <Content Include="assets\vendor\owlcarousel\owl.carousel.min.css" />
+    <Content Include="assets\vendor\owlcarousel\owl.carousel.min.js" />
+    <Content Include="assets\vendor\owlcarousel\owl.theme.default.css" />
+    <Content Include="assets\vendor\owlcarousel\owl.theme.default.min.css" />
+    <Content Include="assets\vendor\owlcarousel\owl.video.play.png" />
+    <Content Include="assets\vendor\validation\additional-methods.js" />
+    <Content Include="assets\vendor\validation\additional-methods.min.js" />
+    <Content Include="assets\vendor\validation\jquery.validate.js" />
+    <Content Include="assets\vendor\validation\jquery.validate.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_ar.js" />
+    <Content Include="assets\vendor\validation\localization\messages_ar.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_bg.js" />
+    <Content Include="assets\vendor\validation\localization\messages_bg.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_bn_BD.js" />
+    <Content Include="assets\vendor\validation\localization\messages_bn_BD.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_ca.js" />
+    <Content Include="assets\vendor\validation\localization\messages_ca.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_cs.js" />
+    <Content Include="assets\vendor\validation\localization\messages_cs.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_da.js" />
+    <Content Include="assets\vendor\validation\localization\messages_da.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_de.js" />
+    <Content Include="assets\vendor\validation\localization\messages_de.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_el.js" />
+    <Content Include="assets\vendor\validation\localization\messages_el.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_es.js" />
+    <Content Include="assets\vendor\validation\localization\messages_es.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_es_AR.js" />
+    <Content Include="assets\vendor\validation\localization\messages_es_AR.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_es_PE.js" />
+    <Content Include="assets\vendor\validation\localization\messages_es_PE.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_et.js" />
+    <Content Include="assets\vendor\validation\localization\messages_et.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_eu.js" />
+    <Content Include="assets\vendor\validation\localization\messages_eu.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_fa.js" />
+    <Content Include="assets\vendor\validation\localization\messages_fa.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_fi.js" />
+    <Content Include="assets\vendor\validation\localization\messages_fi.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_fr.js" />
+    <Content Include="assets\vendor\validation\localization\messages_fr.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_ge.js" />
+    <Content Include="assets\vendor\validation\localization\messages_ge.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_gl.js" />
+    <Content Include="assets\vendor\validation\localization\messages_gl.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_he.js" />
+    <Content Include="assets\vendor\validation\localization\messages_he.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_hr.js" />
+    <Content Include="assets\vendor\validation\localization\messages_hr.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_hu.js" />
+    <Content Include="assets\vendor\validation\localization\messages_hu.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_hy_AM.js" />
+    <Content Include="assets\vendor\validation\localization\messages_hy_AM.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_id.js" />
+    <Content Include="assets\vendor\validation\localization\messages_id.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_is.js" />
+    <Content Include="assets\vendor\validation\localization\messages_is.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_it.js" />
+    <Content Include="assets\vendor\validation\localization\messages_it.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_ja.js" />
+    <Content Include="assets\vendor\validation\localization\messages_ja.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_ka.js" />
+    <Content Include="assets\vendor\validation\localization\messages_ka.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_kk.js" />
+    <Content Include="assets\vendor\validation\localization\messages_kk.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_ko.js" />
+    <Content Include="assets\vendor\validation\localization\messages_ko.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_lt.js" />
+    <Content Include="assets\vendor\validation\localization\messages_lt.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_lv.js" />
+    <Content Include="assets\vendor\validation\localization\messages_lv.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_mk.js" />
+    <Content Include="assets\vendor\validation\localization\messages_mk.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_my.js" />
+    <Content Include="assets\vendor\validation\localization\messages_my.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_nl.js" />
+    <Content Include="assets\vendor\validation\localization\messages_nl.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_no.js" />
+    <Content Include="assets\vendor\validation\localization\messages_no.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_pl.js" />
+    <Content Include="assets\vendor\validation\localization\messages_pl.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_pt_BR.js" />
+    <Content Include="assets\vendor\validation\localization\messages_pt_BR.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_pt_PT.js" />
+    <Content Include="assets\vendor\validation\localization\messages_pt_PT.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_ro.js" />
+    <Content Include="assets\vendor\validation\localization\messages_ro.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_ru.js" />
+    <Content Include="assets\vendor\validation\localization\messages_ru.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_si.js" />
+    <Content Include="assets\vendor\validation\localization\messages_si.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_sk.js" />
+    <Content Include="assets\vendor\validation\localization\messages_sk.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_sl.js" />
+    <Content Include="assets\vendor\validation\localization\messages_sl.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_sr.js" />
+    <Content Include="assets\vendor\validation\localization\messages_sr.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_sr_lat.js" />
+    <Content Include="assets\vendor\validation\localization\messages_sr_lat.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_sv.js" />
+    <Content Include="assets\vendor\validation\localization\messages_sv.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_th.js" />
+    <Content Include="assets\vendor\validation\localization\messages_th.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_tj.js" />
+    <Content Include="assets\vendor\validation\localization\messages_tj.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_tr.js" />
+    <Content Include="assets\vendor\validation\localization\messages_tr.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_uk.js" />
+    <Content Include="assets\vendor\validation\localization\messages_uk.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_vi.js" />
+    <Content Include="assets\vendor\validation\localization\messages_vi.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_zh.js" />
+    <Content Include="assets\vendor\validation\localization\messages_zh.min.js" />
+    <Content Include="assets\vendor\validation\localization\messages_zh_TW.js" />
+    <Content Include="assets\vendor\validation\localization\messages_zh_TW.min.js" />
+    <Content Include="assets\vendor\validation\localization\methods_de.js" />
+    <Content Include="assets\vendor\validation\localization\methods_de.min.js" />
+    <Content Include="assets\vendor\validation\localization\methods_es_CL.js" />
+    <Content Include="assets\vendor\validation\localization\methods_es_CL.min.js" />
+    <Content Include="assets\vendor\validation\localization\methods_fi.js" />
+    <Content Include="assets\vendor\validation\localization\methods_fi.min.js" />
+    <Content Include="assets\vendor\validation\localization\methods_nl.js" />
+    <Content Include="assets\vendor\validation\localization\methods_nl.min.js" />
+    <Content Include="assets\vendor\validation\localization\methods_pt.js" />
+    <Content Include="assets\vendor\validation\localization\methods_pt.min.js" />
+    <Content Include="assets\vendor\waypoints\jquery.waypoints.min.js" />
+    <Content Include="Associazione.aspx" />
+    <Content Include="CambiaPassword.aspx" />
+    <Content Include="Conferma.aspx" />
+    <Content Include="ConfermaMembri.aspx" />
+    <Content Include="ConfermaToken.aspx" />
+    <Content Include="Contattaci.aspx" />
+    <Content Include="Default1.aspx" />
+    <Content Include="Fondi.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="Italia.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Mappa.aspx" />
+    <Content Include="Petitionz-documentation\assets\global_folder_structure.png" />
+    <Content Include="Petitionz-documentation\index.html" />
+    <Content Include="Petitionz-documentation\libs\css\bootstrap-material-design.css" />
+    <Content Include="Petitionz-documentation\libs\css\bootstrap-material-design.min.css" />
+    <Content Include="Petitionz-documentation\libs\css\bootstrap.css" />
+    <Content Include="Petitionz-documentation\libs\css\bootstrap.min.css" />
+    <Content Include="Petitionz-documentation\libs\css\cbstyle.css" />
+    <Content Include="Petitionz-documentation\libs\css\prettify.css" />
+    <Content Include="Petitionz-documentation\libs\css\ripples.css" />
+    <Content Include="Petitionz-documentation\libs\css\ripples.min.css" />
+    <Content Include="Petitionz-documentation\libs\images\cbdown.png" />
+    <Content Include="Petitionz-documentation\libs\images\favicon.ico" />
+    <Content Include="Petitionz-documentation\libs\images\glyphicons-halflings-white.png" />
+    <Content Include="Petitionz-documentation\libs\images\glyphicons-halflings.png" />
+    <Content Include="Petitionz-documentation\libs\images\nav-bg.gif" />
+    <Content Include="Petitionz-documentation\libs\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Petitionz-documentation\libs\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Petitionz-documentation\libs\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Petitionz-documentation\libs\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Petitionz-documentation\libs\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Petitionz-documentation\libs\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Petitionz-documentation\libs\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Petitionz-documentation\libs\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Petitionz-documentation\libs\images\ui-icons_222222_256x240.png" />
+    <Content Include="Petitionz-documentation\libs\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Petitionz-documentation\libs\images\ui-icons_454545_256x240.png" />
+    <Content Include="Petitionz-documentation\libs\images\ui-icons_888888_256x240.png" />
+    <Content Include="Petitionz-documentation\libs\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Petitionz-documentation\libs\javascripts\bootstrap.js" />
+    <Content Include="Petitionz-documentation\libs\javascripts\bootstrap.min.js" />
+    <Content Include="Petitionz-documentation\libs\javascripts\cbscript.js" />
+    <Content Include="Petitionz-documentation\libs\javascripts\githubrepo.js" />
+    <Content Include="Petitionz-documentation\libs\javascripts\jquery.smooth-scroll.js" />
+    <Content Include="Petitionz-documentation\libs\javascripts\jquery.smooth-scroll.min.js" />
+    <Content Include="Petitionz-documentation\libs\javascripts\material.js" />
+    <Content Include="Petitionz-documentation\libs\javascripts\material.min.js" />
+    <Content Include="Petitionz-documentation\libs\javascripts\prettify.js" />
+    <Content Include="Petitionz-documentation\libs\javascripts\ripples.js" />
+    <Content Include="Petitionz-documentation\libs\javascripts\ripples.min.js" />
+    <Content Include="Petitionz-documentation\libs\jqueryui\jquery-ui-1.9.1.custom.min.js" />
+    <Content Include="Petitionz-documentation\libs\jquery\jquery-1.8.3.min.js" />
+    <Content Include="Petitionz-documentation\libs\sh\css\shCore.css" />
+    <Content Include="Petitionz-documentation\libs\sh\css\shCoreDefault.css" />
+    <Content Include="Petitionz-documentation\libs\sh\css\shCoreDjango.css" />
+    <Content Include="Petitionz-documentation\libs\sh\css\shCoreEclipse.css" />
+    <Content Include="Petitionz-documentation\libs\sh\css\shCoreEmacs.css" />
+    <Content Include="Petitionz-documentation\libs\sh\css\shCoreFadeToGrey.css" />
+    <Content Include="Petitionz-documentation\libs\sh\css\shCoreMDUltra.css" />
+    <Content Include="Petitionz-documentation\libs\sh\css\shCoreMidnight.css" />
+    <Content Include="Petitionz-documentation\libs\sh\css\shCoreRDark.css" />
+    <Content Include="Petitionz-documentation\libs\sh\css\shThemeDefault.css" />
+    <Content Include="Petitionz-documentation\libs\sh\css\shThemeDjango.css" />
+    <Content Include="Petitionz-documentation\libs\sh\css\shThemeEclipse.css" />
+    <Content Include="Petitionz-documentation\libs\sh\css\shThemeEmacs.css" />
+    <Content Include="Petitionz-documentation\libs\sh\css\shThemeFadeToGrey.css" />
+    <Content Include="Petitionz-documentation\libs\sh\css\shThemeMDUltra.css" />
+    <Content Include="Petitionz-documentation\libs\sh\css\shThemeMidnight.css" />
+    <Content Include="Petitionz-documentation\libs\sh\css\shThemeRDark.css" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shAutoloader.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushAppleScript.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushAS3.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushBash.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushColdFusion.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushCpp.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushCSharp.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushCss.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushDelphi.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushDiff.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushErlang.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushGroovy.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushHaxe.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushJava.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushJavaFX.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushJScript.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushPerl.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushPhp.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushPlain.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushPowerShell.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushPython.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushRuby.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushSass.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushScala.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushSql.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushTAP.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushTypeScript.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushVb.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shBrushXml.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shCore.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\shLegacy.js" />
+    <Content Include="Petitionz-documentation\libs\sh\js\xregexp-min.js" />
+    <Content Include="Petitionz-documentation\libs\src\javascripts\jquery.tocify.js" />
+    <Content Include="Petitionz-documentation\libs\src\javascripts\jquery.tocify.min.js" />
+    <Content Include="Petitionz-documentation\libs\src\stylesheets\jquery.tocify.css" />
+    <Content Include="Petitionz-documentation\libs\styles\bootstrap.css" />
+    <Content Include="Petitionz-documentation\libs\styles\bootstrap.min.css" />
+    <Content Include="Petitionz-documentation\libs\styles\jquery.ui.all.css" />
+    <Content Include="Petitionz-documentation\libs\styles\prettify.css" />
+    <Content Include="Petitionz\404.html" />
+    <Content Include="Petitionz\assets\css\style-blue.css" />
+    <Content Include="Petitionz\assets\css\style-blue.min.css" />
+    <Content Include="Petitionz\assets\css\style-default.css" />
+    <Content Include="Petitionz\assets\css\style-default.min.css" />
+    <Content Include="Petitionz\assets\css\style-navy.css" />
+    <Content Include="Petitionz\assets\css\style-navy.min.css" />
+    <Content Include="Petitionz\assets\css\style-olive.css" />
+    <Content Include="Petitionz\assets\css\style-olive.min.css" />
+    <Content Include="Petitionz\assets\css\style-orange.css" />
+    <Content Include="Petitionz\assets\css\style-orange.min.css" />
+    <Content Include="Petitionz\assets\css\style-pink.css" />
+    <Content Include="Petitionz\assets\css\style-pink.min.css" />
+    <Content Include="Petitionz\assets\css\style-red.css" />
+    <Content Include="Petitionz\assets\css\style-red.min.css" />
+    <Content Include="Petitionz\assets\css\style-violet.css" />
+    <Content Include="Petitionz\assets\css\style-violet.min.css" />
+    <Content Include="Petitionz\assets\img\404.jpg" />
+    <Content Include="Petitionz\assets\img\favicon\android-icon-144x144.png" />
+    <Content Include="Petitionz\assets\img\favicon\android-icon-192x192.png" />
+    <Content Include="Petitionz\assets\img\favicon\android-icon-36x36.png" />
+    <Content Include="Petitionz\assets\img\favicon\android-icon-48x48.png" />
+    <Content Include="Petitionz\assets\img\favicon\android-icon-72x72.png" />
+    <Content Include="Petitionz\assets\img\favicon\android-icon-96x96.png" />
+    <Content Include="Petitionz\assets\img\favicon\apple-icon-114x114.png" />
+    <Content Include="Petitionz\assets\img\favicon\apple-icon-120x120.png" />
+    <Content Include="Petitionz\assets\img\favicon\apple-icon-144x144.png" />
+    <Content Include="Petitionz\assets\img\favicon\apple-icon-152x152.png" />
+    <Content Include="Petitionz\assets\img\favicon\apple-icon-180x180.png" />
+    <Content Include="Petitionz\assets\img\favicon\apple-icon-57x57.png" />
+    <Content Include="Petitionz\assets\img\favicon\apple-icon-60x60.png" />
+    <Content Include="Petitionz\assets\img\favicon\apple-icon-72x72.png" />
+    <Content Include="Petitionz\assets\img\favicon\apple-icon-76x76.png" />
+    <Content Include="Petitionz\assets\img\favicon\apple-icon-precomposed.png" />
+    <Content Include="Petitionz\assets\img\favicon\apple-icon.png" />
+    <Content Include="Petitionz\assets\img\favicon\apple-touch-icon.png" />
+    <Content Include="Petitionz\assets\img\favicon\browserconfig.xml" />
+    <Content Include="Petitionz\assets\img\favicon\favicon-16x16.png" />
+    <Content Include="Petitionz\assets\img\favicon\favicon-32x32.png" />
+    <Content Include="Petitionz\assets\img\favicon\favicon-96x96.png" />
+    <Content Include="Petitionz\assets\img\favicon\favicon.ico" />
+    <Content Include="Petitionz\assets\img\favicon\favicon.png" />
+    <Content Include="Petitionz\assets\img\favicon\ms-icon-144x144.png" />
+    <Content Include="Petitionz\assets\img\favicon\ms-icon-150x150.png" />
+    <Content Include="Petitionz\assets\img\favicon\ms-icon-310x310.png" />
+    <Content Include="Petitionz\assets\img\favicon\ms-icon-70x70.png" />
+    <Content Include="Petitionz\assets\img\icons\abstract-five.png" />
+    <Content Include="Petitionz\assets\img\icons\abstract-four.png" />
+    <Content Include="Petitionz\assets\img\icons\abstract-one.png" />
+    <Content Include="Petitionz\assets\img\icons\abstract-seven.png" />
+    <Content Include="Petitionz\assets\img\icons\abstract-six.png" />
+    <Content Include="Petitionz\assets\img\icons\abstract-three.png" />
+    <Content Include="Petitionz\assets\img\icons\abstract-two.png" />
+    <Content Include="Petitionz\assets\img\icons\award.png" />
+    <Content Include="Petitionz\assets\img\icons\doc-icon.png" />
+    <Content Include="Petitionz\assets\img\icons\doc-pen-icon.png" />
+    <Content Include="Petitionz\assets\img\icons\people-icon.png" />
+    <Content Include="Petitionz\assets\img\map-icon.png" />
+    <Content Include="Petitionz\assets\img\opengraph\fbphoto-476-476.png" />
+    <Content Include="Petitionz\assets\img\petitionz-logo.png" />
+    <Content Include="Petitionz\assets\img\twittercardimg\twittercard-144-144.png" />
+    <Content Include="Petitionz\assets\js\custom.js" />
+    <Content Include="Petitionz\assets\js\jqcbxgooglemap.js" />
+    <Content Include="Petitionz\assets\js\theme.js" />
+    <Content Include="Petitionz\assets\js\theme.min.js" />
+    <Content Include="Petitionz\assets\switcher\switcher.js" />
+    <Content Include="Petitionz\assets\vendor\bootstrap-material\css\bootstrap-material-design.css" />
+    <Content Include="Petitionz\assets\vendor\bootstrap-material\css\bootstrap-material-design.min.css" />
+    <Content Include="Petitionz\assets\vendor\bootstrap-material\css\ripples.css" />
+    <Content Include="Petitionz\assets\vendor\bootstrap-material\css\ripples.min.css" />
+    <Content Include="Petitionz\assets\vendor\bootstrap-material\js\material.js" />
+    <Content Include="Petitionz\assets\vendor\bootstrap-material\js\material.min.js" />
+    <Content Include="Petitionz\assets\vendor\bootstrap-material\js\ripples.js" />
+    <Content Include="Petitionz\assets\vendor\bootstrap-material\js\ripples.min.js" />
+    <Content Include="Petitionz\assets\vendor\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Petitionz\assets\vendor\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Petitionz\assets\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Petitionz\assets\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Petitionz\assets\vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Petitionz\assets\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Petitionz\assets\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Petitionz\assets\vendor\bootstrap\js\npm.js" />
+    <Content Include="Petitionz\assets\vendor\counterup\jquery.counterup.js" />
+    <Content Include="Petitionz\assets\vendor\counterup\jquery.counterup.min.js" />
+    <Content Include="Petitionz\assets\vendor\datatable\jquery.datatables.min.css" />
+    <Content Include="Petitionz\assets\vendor\datatable\jquery.datatables.min.js" />
+    <Content Include="Petitionz\assets\vendor\fontawesome\css\font-awesome.css" />
+    <Content Include="Petitionz\assets\vendor\fontawesome\css\font-awesome.min.css" />
+    <Content Include="Petitionz\assets\vendor\fontawesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\angularjs.html" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\basic-plus.html" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\basic.html" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\bower-version-update.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\cors\postmessage.html" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\cors\result.html" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\css\demo-ie8.css" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\css\demo.css" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\css\jquery.fileupload-noscript.css" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\css\jquery.fileupload-ui-noscript.css" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\css\jquery.fileupload-ui.css" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\css\jquery.fileupload.css" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\css\style.css" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\img\loading.gif" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\img\progressbar.gif" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\index.html" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\jquery-ui.html" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\js\app.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\js\canvas-to-blob.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\js\canvas-to-blob.min.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\js\cors\jquery.postmessage-transport.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\js\cors\jquery.xdr-transport.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\js\jquery.fileupload-angular.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\js\jquery.fileupload-audio.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\js\jquery.fileupload-image.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\js\jquery.fileupload-jquery-ui.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\js\jquery.fileupload-process.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\js\jquery.fileupload-ui.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\js\jquery.fileupload-validate.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\js\jquery.fileupload-video.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\js\jquery.fileupload.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\js\jquery.iframe-transport.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\js\load-image.all.min.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\js\main.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\js\vendor\jquery.ui.widget.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\server\php\index.php" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\server\php\UploadHandler.php" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\test\index.html" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\test\test.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-sortable\jquery-sortable-min.js" />
+    <Content Include="Petitionz\assets\vendor\jquery-sortable\jquery-sortable.js" />
+    <Content Include="Petitionz\assets\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="Petitionz\assets\vendor\magnific\jquery.magnific-popup.js" />
+    <Content Include="Petitionz\assets\vendor\magnific\magnific-popup.css" />
+    <Content Include="Petitionz\assets\vendor\mustache\mustache.js" />
+    <Content Include="Petitionz\assets\vendor\mustache\mustache.min.js" />
+    <Content Include="Petitionz\assets\vendor\owlcarousel\ajax-loader.gif" />
+    <Content Include="Petitionz\assets\vendor\owlcarousel\owl.carousel.css" />
+    <Content Include="Petitionz\assets\vendor\owlcarousel\owl.carousel.js" />
+    <Content Include="Petitionz\assets\vendor\owlcarousel\owl.carousel.min.css" />
+    <Content Include="Petitionz\assets\vendor\owlcarousel\owl.carousel.min.js" />
+    <Content Include="Petitionz\assets\vendor\owlcarousel\owl.theme.default.css" />
+    <Content Include="Petitionz\assets\vendor\owlcarousel\owl.theme.default.min.css" />
+    <Content Include="Petitionz\assets\vendor\owlcarousel\owl.video.play.png" />
+    <Content Include="Petitionz\assets\vendor\validation\additional-methods.js" />
+    <Content Include="Petitionz\assets\vendor\validation\additional-methods.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\jquery.validate.js" />
+    <Content Include="Petitionz\assets\vendor\validation\jquery.validate.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_ar.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_ar.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_bg.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_bg.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_bn_BD.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_bn_BD.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_ca.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_ca.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_cs.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_cs.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_da.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_da.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_de.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_de.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_el.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_el.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_es.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_es.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_es_AR.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_es_AR.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_es_PE.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_es_PE.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_et.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_et.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_eu.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_eu.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_fa.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_fa.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_fi.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_fi.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_fr.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_fr.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_ge.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_ge.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_gl.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_gl.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_he.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_he.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_hr.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_hr.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_hu.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_hu.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_hy_AM.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_hy_AM.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_id.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_id.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_is.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_is.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_it.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_it.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_ja.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_ja.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_ka.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_ka.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_kk.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_kk.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_ko.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_ko.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_lt.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_lt.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_lv.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_lv.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_mk.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_mk.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_my.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_my.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_nl.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_nl.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_no.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_no.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_pl.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_pl.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_pt_BR.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_pt_BR.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_pt_PT.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_pt_PT.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_ro.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_ro.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_ru.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_ru.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_si.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_si.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_sk.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_sk.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_sl.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_sl.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_sr.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_sr.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_sr_lat.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_sr_lat.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_sv.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_sv.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_th.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_th.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_tj.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_tj.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_tr.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_tr.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_uk.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_uk.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_vi.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_vi.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_zh.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_zh.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_zh_TW.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\messages_zh_TW.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\methods_de.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\methods_de.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\methods_es_CL.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\methods_es_CL.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\methods_fi.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\methods_fi.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\methods_nl.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\methods_nl.min.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\methods_pt.js" />
+    <Content Include="Petitionz\assets\vendor\validation\localization\methods_pt.min.js" />
+    <Content Include="Petitionz\assets\vendor\waypoints\jquery.waypoints.min.js" />
+    <Content Include="Petitionz\blog-left-sidebar.html" />
+    <Content Include="Petitionz\blog-list.html" />
+    <Content Include="Petitionz\blog-list_nohead.html" />
+    <Content Include="Petitionz\blog-right-sidebar.html" />
+    <Content Include="Petitionz\blog.html" />
+    <Content Include="Petitionz\contact.html" />
+    <Content Include="Petitionz\create-petition.html" />
+    <Content Include="Petitionz\gulpfile.js" />
+    <Content Include="Petitionz\index.html" />
+    <Content Include="Petitionz\login.html" />
+    <Content Include="Petitionz\pass-reset.html" />
+    <Content Include="Petitionz\petition-listing-three-col.html" />
+    <Content Include="Petitionz\petition-listing.html" />
+    <Content Include="Petitionz\php\class.validation.php" />
+    <Content Include="Petitionz\php\contact.php" />
+    <Content Include="Petitionz\php\Mailchimp.php" />
+    <Content Include="Petitionz\php\Mailchimp\Campaigns.php" />
+    <Content Include="Petitionz\php\Mailchimp\Conversations.php" />
+    <Content Include="Petitionz\php\Mailchimp\Ecomm.php" />
+    <Content Include="Petitionz\php\Mailchimp\Exceptions.php" />
+    <Content Include="Petitionz\php\Mailchimp\Folders.php" />
+    <Content Include="Petitionz\php\Mailchimp\Gallery.php" />
+    <Content Include="Petitionz\php\Mailchimp\Goal.php" />
+    <Content Include="Petitionz\php\Mailchimp\Helper.php" />
+    <Content Include="Petitionz\php\Mailchimp\Lists.php" />
+    <Content Include="Petitionz\php\Mailchimp\Mobile.php" />
+    <Content Include="Petitionz\php\Mailchimp\Neapolitan.php" />
+    <Content Include="Petitionz\php\Mailchimp\Reports.php" />
+    <Content Include="Petitionz\php\Mailchimp\Templates.php" />
+    <Content Include="Petitionz\php\Mailchimp\Users.php" />
+    <Content Include="Petitionz\php\Mailchimp\Vip.php" />
+    <Content Include="Petitionz\php\phpmailer\class.phpmailer.php" />
+    <Content Include="Petitionz\php\phpmailer\class.pop3.php" />
+    <Content Include="Petitionz\php\phpmailer\class.smtp.php" />
+    <Content Include="Petitionz\php\phpmailer\extras\EasyPeasyICS.php" />
+    <Content Include="Petitionz\php\phpmailer\extras\htmlfilter.php" />
+    <Content Include="Petitionz\php\phpmailer\extras\ntlm_sasl_client.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-am.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-ar.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-az.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-be.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-bg.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-br.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-ca.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-ch.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-cz.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-de.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-dk.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-el.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-eo.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-es.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-et.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-fa.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-fi.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-fo.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-fr.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-gl.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-he.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-hr.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-hu.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-id.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-it.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-ja.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-ka.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-lt.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-lv.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-ms.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-nl.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-no.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-pl.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-pt.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-ro.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-ru.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-se.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-sk.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-sl.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-sr.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-tr.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-uk.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-vi.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-zh.php" />
+    <Content Include="Petitionz\php\phpmailer\language\phpmailer.lang-zh_cn.php" />
+    <Content Include="Petitionz\php\phpmailer\PHPMailerAutoload.php" />
+    <Content Include="Petitionz\php\server\php\index.php" />
+    <Content Include="Petitionz\php\server\php\UploadHandler.php" />
+    <Content Include="Petitionz\php\signature.php" />
+    <Content Include="Petitionz\php\subscribe.php" />
+    <Content Include="Petitionz\referendum-detail.html" />
+    <Content Include="Petitionz\signature-list.html" />
+    <Content Include="Petitionz\signup.html" />
+    <Content Include="Petitionz\single-petition.html" />
+    <Content Include="Petitionz\typography.html" />
+    <Content Include="Proponi.aspx" />
+    <Content Include="Referendum.aspx" />
+    <Content Include="Signup.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Associazione.aspx.cs">
+      <DependentUpon>Associazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CambiaPassword.aspx.cs">
+      <DependentUpon>CambiaPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\CEmail.cs" />
+    <Compile Include="Classes\CFund.cs" />
+    <Compile Include="Classes\CKeyGenerator.cs" />
+    <Compile Include="Classes\CReferendum.cs" />
+    <Compile Include="Classes\CStart.cs" />
+    <Compile Include="Classes\CUtente.cs" />
+    <Compile Include="Classes\MessageBox.cs" />
+    <Compile Include="Classes\UtilityDB.cs" />
+    <Compile Include="Conferma.aspx.cs">
+      <DependentUpon>Conferma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfermaMembri.aspx.cs">
+      <DependentUpon>ConfermaMembri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfermaToken.aspx.cs">
+      <DependentUpon>ConfermaToken.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contattaci.aspx.cs">
+      <DependentUpon>Contattaci.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default1.aspx.cs">
+      <DependentUpon>Default1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fondi.aspx.cs">
+      <DependentUpon>Fondi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Italia.aspx.cs">
+      <DependentUpon>Italia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mappa.aspx.cs">
+      <DependentUpon>Mappa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proponi.aspx.cs">
+      <DependentUpon>Proponi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Referendum.aspx.cs">
+      <DependentUpon>Referendum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Layout.Master.cs">
+      <DependentUpon>Layout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Signup.aspx.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\img\favicon\manifest.json" />
+    <Content Include="assets\less\blogs.less" />
+    <Content Include="assets\less\common.less" />
+    <Content Include="assets\less\footer.less" />
+    <Content Include="assets\less\form.less" />
+    <Content Include="assets\less\header.less" />
+    <Content Include="assets\less\home.less" />
+    <Content Include="assets\less\listing.less" />
+    <Content Include="assets\less\mixins.less" />
+    <Content Include="assets\less\mixins\bootvar.less" />
+    <Content Include="assets\less\mixins\color.less" />
+    <Content Include="assets\less\mixins\elements.less" />
+    <Content Include="assets\less\mixins\font-rem.less" />
+    <Content Include="assets\less\petition.less" />
+    <Content Include="assets\less\responsive.less" />
+    <Content Include="assets\less\style-default.less" />
+    <Content Include="assets\less\switcher-theme.less" />
+    <Content Include="assets\less\tableofcontent.less" />
+    <Content Include="assets\less\themeinfo.less" />
+    <Content Include="assets\less\typography.less" />
+    <Content Include="assets\less\variables.less" />
+    <Content Include="assets\less\variation\style-blue.less" />
+    <Content Include="assets\less\variation\style-navy.less" />
+    <Content Include="assets\less\variation\style-olive.less" />
+    <Content Include="assets\less\variation\style-orange.less" />
+    <Content Include="assets\less\variation\style-pink.less" />
+    <Content Include="assets\less\variation\style-red.less" />
+    <Content Include="assets\less\variation\style-violet.less" />
+    <Content Include="assets\vendor\bootstrap-material\css\bootstrap-material-design.css.map" />
+    <Content Include="assets\vendor\bootstrap-material\css\bootstrap-material-design.min.css.map" />
+    <Content Include="assets\vendor\bootstrap-material\css\ripples.css.map" />
+    <Content Include="assets\vendor\bootstrap-material\css\ripples.min.css.map" />
+    <Content Include="assets\vendor\bootstrap-material\js\material.min.js.map" />
+    <Content Include="assets\vendor\bootstrap-material\js\ripples.min.js.map" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="assets\vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="assets\vendor\fontawesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\vendor\fontawesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\vendor\fontawesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\vendor\fontawesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\vendor\fontawesome\fonts\FontAwesome.otf" />
+    <Content Include="assets\vendor\jquery-file-upload\.gitignore" />
+    <Content Include="assets\vendor\jquery-file-upload\.jshintrc" />
+    <Content Include="assets\vendor\jquery-file-upload\.npmignore" />
+    <Content Include="assets\vendor\jquery-file-upload\bower.json" />
+    <Content Include="assets\vendor\jquery-file-upload\CONTRIBUTING.md" />
+    <Content Include="assets\vendor\jquery-file-upload\js\canvas-to-blob.min.js.map" />
+    <Content Include="assets\vendor\jquery-file-upload\js\load-image.all.min.js.map" />
+    <Content Include="assets\vendor\jquery-file-upload\LICENSE" />
+    <Content Include="assets\vendor\jquery-file-upload\package.json" />
+    <Content Include="assets\vendor\jquery-file-upload\README.md" />
+    <Content Include="assets\vendor\jquery-file-upload\server\php\docker-compose.yml" />
+    <Content Include="assets\vendor\jquery-file-upload\server\php\Dockerfile" />
+    <Content Include="assets\vendor\jquery-file-upload\server\php\files\.gitignore" />
+    <Content Include="assets\vendor\jquery-file-upload\server\php\files\.htaccess" />
+    <Content Include="assets\vendor\jquery-validation\LICENSE.md" />
+    <Content Include="Petitionz-documentation\libs\css\bootstrap-material-design.css.map" />
+    <Content Include="Petitionz-documentation\libs\css\bootstrap-material-design.min.css.map" />
+    <Content Include="Petitionz-documentation\libs\css\ripples.css.map" />
+    <Content Include="Petitionz-documentation\libs\css\ripples.min.css.map" />
+    <Content Include="Petitionz-documentation\libs\javascripts\material.min.js.map" />
+    <Content Include="Petitionz-documentation\libs\javascripts\ripples.min.js.map" />
+    <Content Include="Petitionz-documentation\libs\less\cbstyle.less" />
+    <Content Include="Petitionz-documentation\libs\less\variable.less" />
+    <Content Include="Petitionz\assets\img\favicon\manifest.json" />
+    <Content Include="Petitionz\assets\less\blogs.less" />
+    <Content Include="Petitionz\assets\less\common.less" />
+    <Content Include="Petitionz\assets\less\footer.less" />
+    <Content Include="Petitionz\assets\less\form.less" />
+    <Content Include="Petitionz\assets\less\header.less" />
+    <Content Include="Petitionz\assets\less\home.less" />
+    <Content Include="Petitionz\assets\less\listing.less" />
+    <Content Include="Petitionz\assets\less\mixins.less" />
+    <Content Include="Petitionz\assets\less\mixins\bootvar.less" />
+    <Content Include="Petitionz\assets\less\mixins\color.less" />
+    <Content Include="Petitionz\assets\less\mixins\elements.less" />
+    <Content Include="Petitionz\assets\less\mixins\font-rem.less" />
+    <Content Include="Petitionz\assets\less\petition.less" />
+    <Content Include="Petitionz\assets\less\responsive.less" />
+    <Content Include="Petitionz\assets\less\style-default.less" />
+    <Content Include="Petitionz\assets\less\switcher-theme.less" />
+    <Content Include="Petitionz\assets\less\tableofcontent.less" />
+    <Content Include="Petitionz\assets\less\themeinfo.less" />
+    <Content Include="Petitionz\assets\less\typography.less" />
+    <Content Include="Petitionz\assets\less\variables.less" />
+    <Content Include="Petitionz\assets\less\variation\style-blue.less" />
+    <Content Include="Petitionz\assets\less\variation\style-navy.less" />
+    <Content Include="Petitionz\assets\less\variation\style-olive.less" />
+    <Content Include="Petitionz\assets\less\variation\style-orange.less" />
+    <Content Include="Petitionz\assets\less\variation\style-pink.less" />
+    <Content Include="Petitionz\assets\less\variation\style-red.less" />
+    <Content Include="Petitionz\assets\less\variation\style-violet.less" />
+    <Content Include="Petitionz\assets\vendor\bootstrap-material\css\bootstrap-material-design.css.map" />
+    <Content Include="Petitionz\assets\vendor\bootstrap-material\css\bootstrap-material-design.min.css.map" />
+    <Content Include="Petitionz\assets\vendor\bootstrap-material\css\ripples.css.map" />
+    <Content Include="Petitionz\assets\vendor\bootstrap-material\css\ripples.min.css.map" />
+    <Content Include="Petitionz\assets\vendor\bootstrap-material\js\material.min.js.map" />
+    <Content Include="Petitionz\assets\vendor\bootstrap-material\js\ripples.min.js.map" />
+    <Content Include="Petitionz\assets\vendor\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Petitionz\assets\vendor\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="Petitionz\assets\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Petitionz\assets\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Petitionz\assets\vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Petitionz\assets\vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Petitionz\assets\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Petitionz\assets\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Petitionz\assets\vendor\fontawesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Petitionz\assets\vendor\fontawesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Petitionz\assets\vendor\fontawesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Petitionz\assets\vendor\fontawesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Petitionz\assets\vendor\fontawesome\fonts\FontAwesome.otf" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\.gitignore" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\.jshintrc" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\.npmignore" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\bower.json" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\CONTRIBUTING.md" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\js\canvas-to-blob.min.js.map" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\js\load-image.all.min.js.map" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\LICENSE" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\package.json" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\README.md" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\server\php\docker-compose.yml" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\server\php\Dockerfile" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\server\php\files\.gitignore" />
+    <Content Include="Petitionz\assets\vendor\jquery-file-upload\server\php\files\.htaccess" />
+    <Content Include="Petitionz\package.json" />
+    <Content Include="Petitionz\php\phpmailer\.scrutinizer.yml" />
+    <Content Include="Petitionz\php\phpmailer\.travis.yml" />
+    <Content Include="Petitionz\php\phpmailer\changelog.md" />
+    <Content Include="Petitionz\php\phpmailer\composer.json" />
+    <Content Include="Petitionz\php\phpmailer\extras\README.md" />
+    <Content Include="Petitionz\php\phpmailer\LICENSE" />
+    <Content Include="Petitionz\php\phpmailer\README.md" />
+    <Content Include="Petitionz\php\phpmailer\travis.phpunit.xml.dist" />
+    <Content Include="Petitionz\php\phpmailer\VERSION" />
+    <Content Include="Petitionz\php\server\php\files\.gitignore" />
+    <Content Include="Petitionz\php\server\php\files\1.htaccess" />
+    <Content Include="Shared\Layout.Master" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56638</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44387/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

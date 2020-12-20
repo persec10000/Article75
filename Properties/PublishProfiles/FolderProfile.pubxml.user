@@ -1,0 +1,2951 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\inetpub\wwwroot</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Data/referendum-abrogrativo - org.mdb">
+      <publishTime>12/11/2020 22:03:40</publishTime>
+    </File>
+    <File Include="App_Data/referendum-abrogrativo - yes.mdb">
+      <publishTime>12/11/2020 22:03:14</publishTime>
+    </File>
+    <File Include="App_Data/referendum-abrogrativo.mdb">
+      <publishTime>12/20/2020 09:51:55</publishTime>
+    </File>
+    <File Include="assets/css/custom.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/css/style-blue -.min.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/css/style-blue.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/css/style-blue.min.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/css/style-default.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/css/style-default.min.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/css/style-default.min_old.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/css/style-default_old.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/css/style-navy.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/css/style-navy.min.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/css/style-olive.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/css/style-olive.min.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/css/style-orange.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/css/style-orange.min.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/css/style-pink.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/css/style-pink.min.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/css/style-red.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/css/style-red.min.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/css/style-violet.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/css/style-violet.min.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/404.jpg">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/association/centro.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/android-icon-144x144.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/android-icon-192x192.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/android-icon-36x36.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/android-icon-48x48.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/android-icon-72x72.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/android-icon-96x96.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/apple-icon-114x114.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/apple-icon-120x120.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/apple-icon-144x144.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/apple-icon-152x152.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/apple-icon-180x180.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/apple-icon-57x57.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/apple-icon-60x60.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/apple-icon-72x72.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/apple-icon-76x76.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/apple-icon-precomposed.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/apple-icon.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/apple-touch-icon.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/browserconfig.xml">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/favicon-16x16.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/favicon-32x32.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/favicon-96x96.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/favicon.ico">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/favicon.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/manifest.json">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/ms-icon-144x144.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/ms-icon-150x150.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/ms-icon-310x310.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/favicon/ms-icon-70x70.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/fondi/1.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/fondi/2.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/fondi/3.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/fondi/4.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/fondi/5.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/fondi/6.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/fondi/bg.jpg">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/fondi/euro.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/icons/abstract-five.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/icons/abstract-four.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/icons/abstract-one.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/icons/abstract-seven.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/icons/abstract-six.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/icons/abstract-three.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/icons/abstract-two.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/icons/award.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/icons/doc-icon.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/icons/doc-pen-icon.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/icons/people-icon.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/idea/1.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/idea/2.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/idea/3.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/idea/tv.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/map-icon.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/opengraph/fbphoto-476-476.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/petitionz-logo.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/petitionz-logo_small.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/referendum/1.jpg">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/referendum/2.jpg">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/referendum/3.jpg">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/referendum/4.jpg">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/referendum/5.jpg">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/referendum/6.jpg">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/referendum/7.jpg">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/referendum/no.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/referendum/referenda.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/referendum/yes.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/slider/slider_image_1.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/slider/slider_image_2.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/slider/slider_image_3.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/img/twittercardimg/twittercard-144-144.png">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/js/custom.js">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/js/jqcbxgooglemap.js">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/js/theme.js">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/js/theme.min.js">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/blogs.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/common.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/footer.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/form.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/header.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/home.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/listing.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/mixins.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/mixins/bootvar.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/mixins/color.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/mixins/elements.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/mixins/font-rem.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/petition.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/responsive.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/style-default.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/switcher-theme.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/tableofcontent.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/themeinfo.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/typography.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/variables.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/variation/style-blue.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/variation/style-navy.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/variation/style-olive.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/variation/style-orange.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/variation/style-pink.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/variation/style-red.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/less/variation/style-violet.less">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/switcher/switcher.js">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap-material/css/bootstrap-material-design.css">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap-material/css/bootstrap-material-design.css.map">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap-material/css/bootstrap-material-design.min.css">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap-material/css/bootstrap-material-design.min.css.map">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap-material/css/ripples.css">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap-material/css/ripples.css.map">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap-material/css/ripples.min.css">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap-material/css/ripples.min.css.map">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap-material/js/material.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap-material/js/material.min.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap-material/js/material.min.js.map">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap-material/js/ripples.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap-material/js/ripples.min.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap-material/js/ripples.min.js.map">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/css/bootstrap-theme.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/css/bootstrap-theme.css.map">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/css/bootstrap-theme.min.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/css/bootstrap-theme.min.css.map">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/css/bootstrap.css">
+      <publishTime>11/16/2020 22:41:06</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/css/bootstrap.css.map">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/css/bootstrap.min.css">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/css/bootstrap.min.css.map">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/js/bootstrap.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/js/bootstrap.min.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/js/npm.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/counterup/jquery.counterup.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/counterup/jquery.counterup.min.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/datatable/jquery.datatables.min.css">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/datatable/jquery.datatables.min.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/fontawesome/css/font-awesome.css">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/fontawesome/css/font-awesome.min.css">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/fontawesome/fonts/fontawesome-webfont.eot">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/fontawesome/fonts/fontawesome-webfont.svg">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/fontawesome/fonts/fontawesome-webfont.ttf">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/fontawesome/fonts/fontawesome-webfont.woff">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/fontawesome/fonts/fontawesome-webfont.woff2">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/fontawesome/fonts/FontAwesome.otf">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/.gitignore">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/.jshintrc">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/.npmignore">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/angularjs.html">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/basic-plus.html">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/basic.html">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/bower-version-update.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/bower.json">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/CONTRIBUTING.md">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/cors/postmessage.html">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/cors/result.html">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/css/demo-ie8.css">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/css/demo.css">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/css/jquery.fileupload-noscript.css">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/css/jquery.fileupload-ui-noscript.css">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/css/jquery.fileupload-ui.css">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/css/jquery.fileupload.css">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/css/style.css">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/img/loading.gif">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/img/progressbar.gif">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/index.html">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/jquery-ui.html">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/js/app.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/js/canvas-to-blob.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/js/canvas-to-blob.min.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/js/canvas-to-blob.min.js.map">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/js/cors/jquery.postmessage-transport.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/js/cors/jquery.xdr-transport.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/js/jquery.fileupload-angular.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/js/jquery.fileupload-audio.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/js/jquery.fileupload-image.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/js/jquery.fileupload-jquery-ui.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/js/jquery.fileupload-process.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/js/jquery.fileupload-ui.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/js/jquery.fileupload-validate.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/js/jquery.fileupload-video.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/js/jquery.fileupload.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/js/jquery.iframe-transport.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/js/load-image.all.min.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/js/load-image.all.min.js.map">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/js/main.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/js/vendor/jquery.ui.widget.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/LICENSE">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/package.json">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/README.md">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/server/php/docker-compose.yml">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/server/php/Dockerfile">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/server/php/files/.gitignore">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/server/php/files/.htaccess">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/server/php/index.php">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/server/php/UploadHandler.php">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/test/index.html">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-file-upload/test/test.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-sortable/jquery-sortable-min.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-sortable/jquery-sortable.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-validation-unobtrusive/LICENSE.txt">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-validation/dist/additional-methods.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-validation/dist/additional-methods.min.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-validation/dist/jquery.validate.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-validation/dist/jquery.validate.min.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery-validation/LICENSE.md">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/jquery-3.2.1.min.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/magnific/jquery.magnific-popup.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/magnific/magnific-popup.css">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/mustache/mustache.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/mustache/mustache.min.js">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/owlcarousel/ajax-loader.gif">
+      <publishTime>11/16/2020 22:41:08</publishTime>
+    </File>
+    <File Include="assets/vendor/owlcarousel/owl.carousel.css">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/owlcarousel/owl.carousel.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/owlcarousel/owl.carousel.min.css">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/owlcarousel/owl.carousel.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/owlcarousel/owl.theme.default.css">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/owlcarousel/owl.theme.default.min.css">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/owlcarousel/owl.video.play.png">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/additional-methods.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/additional-methods.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/jquery.validate.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/jquery.validate.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_ar.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_ar.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_bg.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_bg.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_bn_BD.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_bn_BD.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_ca.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_ca.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_cs.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_cs.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_da.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_da.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_de.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_de.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_el.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_el.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_es.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_es.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_es_AR.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_es_AR.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_es_PE.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_es_PE.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_et.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_et.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_eu.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_eu.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_fa.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_fa.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_fi.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_fi.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_fr.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_fr.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_ge.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_ge.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_gl.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_gl.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_he.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_he.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_hr.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_hr.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_hu.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_hu.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_hy_AM.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_hy_AM.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_id.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_id.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_is.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_is.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_it.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_it.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_ja.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_ja.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_ka.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_ka.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_kk.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_kk.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_ko.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_ko.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_lt.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_lt.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_lv.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_lv.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_mk.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_mk.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_my.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_my.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_nl.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_nl.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_no.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_no.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_pl.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_pl.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_pt_BR.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_pt_BR.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_pt_PT.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_pt_PT.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_ro.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_ro.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_ru.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_ru.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_si.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_si.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_sk.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_sk.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_sl.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_sl.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_sr.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_sr.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_sr_lat.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_sr_lat.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_sv.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_sv.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_th.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_th.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_tj.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_tj.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_tr.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_tr.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_uk.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_uk.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_vi.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_vi.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_zh.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_zh.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_zh_TW.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/messages_zh_TW.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/methods_de.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/methods_de.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/methods_es_CL.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/methods_es_CL.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/methods_fi.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/methods_fi.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/methods_nl.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/methods_nl.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/methods_pt.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/validation/localization/methods_pt.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="assets/vendor/waypoints/jquery.waypoints.min.js">
+      <publishTime>11/16/2020 22:41:10</publishTime>
+    </File>
+    <File Include="Associazione.aspx">
+      <publishTime>12/18/2020 11:09:21</publishTime>
+    </File>
+    <File Include="bin/Article75.dll">
+      <publishTime>12/20/2020 12:29:25</publishTime>
+    </File>
+    <File Include="bin/Article75.pdb">
+      <publishTime>12/20/2020 12:29:25</publishTime>
+    </File>
+    <File Include="bin/FubarCoder.RestSharp.Portable.Core.dll">
+      <publishTime>03/06/2017 15:29:54</publishTime>
+    </File>
+    <File Include="bin/FubarCoder.RestSharp.Portable.HttpClient.dll">
+      <publishTime>03/06/2017 15:29:56</publishTime>
+    </File>
+    <File Include="bin/JsonSubTypes.dll">
+      <publishTime>11/22/2017 13:59:34</publishTime>
+    </File>
+    <File Include="bin/Mandrill.dll">
+      <publishTime>07/21/2017 05:07:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>09/05/2018 16:10:50</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/18/2018 09:44:54</publishTime>
+    </File>
+    <File Include="bin/RestSharp.dll">
+      <publishTime>01/06/2018 12:54:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>08/08/2018 12:18:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>08/08/2018 12:18:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>08/08/2018 12:09:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>12/05/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>12/05/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>11/05/2016 18:55:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>11/05/2016 18:55:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/16/2018 03:29:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>11/05/2016 18:55:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>11/05/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>11/05/2016 18:55:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>11/05/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Globalization.Calendars.dll">
+      <publishTime>11/05/2016 18:56:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
+      <publishTime>11/05/2016 18:56:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Http.dll">
+      <publishTime>11/05/2016 18:56:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Sockets.dll">
+      <publishTime>11/05/2016 18:56:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/16/2018 03:29:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>11/05/2016 18:57:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>11/05/2016 18:57:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>11/05/2016 18:57:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>11/05/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>11/05/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>11/05/2016 18:57:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>11/05/2016 18:57:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>11/05/2016 18:57:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>11/05/2016 18:57:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>11/05/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>11/05/2016 18:57:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>11/05/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>08/08/2018 12:18:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>08/08/2018 12:09:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>08/08/2018 12:18:16</publishTime>
+    </File>
+    <File Include="bin/Sendinblue.Api.dll">
+      <publishTime>06/15/2018 09:48:10</publishTime>
+    </File>
+    <File Include="bin/sib_api_v3_sdk.dll">
+      <publishTime>11/03/2020 07:30:40</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>11/05/2016 04:55:52</publishTime>
+    </File>
+    <File Include="bin/System.ValueTuple.dll">
+      <publishTime>07/19/2017 10:01:32</publishTime>
+    </File>
+    <File Include="CambiaPassword.aspx">
+      <publishTime>12/12/2020 06:31:28</publishTime>
+    </File>
+    <File Include="Conferma.aspx">
+      <publishTime>12/18/2020 06:02:09</publishTime>
+    </File>
+    <File Include="ConfermaMembri.aspx">
+      <publishTime>12/10/2020 07:11:37</publishTime>
+    </File>
+    <File Include="ConfermaToken.aspx">
+      <publishTime>12/10/2020 04:16:26</publishTime>
+    </File>
+    <File Include="Contattaci.aspx">
+      <publishTime>11/16/2020 22:41:12</publishTime>
+    </File>
+    <File Include="Default1.aspx">
+      <publishTime>12/10/2020 04:16:26</publishTime>
+    </File>
+    <File Include="Fondi.aspx">
+      <publishTime>12/20/2020 10:08:35</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>11/16/2020 22:41:12</publishTime>
+    </File>
+    <File Include="Home.aspx">
+      <publishTime>12/10/2020 04:06:43</publishTime>
+    </File>
+    <File Include="Italia.aspx">
+      <publishTime>12/11/2020 22:56:36</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>12/19/2020 06:28:08</publishTime>
+    </File>
+    <File Include="Mappa.aspx">
+      <publishTime>12/10/2020 14:41:43</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/assets/global_folder_structure.png">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/index.html">
+      <publishTime>12/11/2020 09:01:50</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/css/bootstrap-material-design.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/css/bootstrap-material-design.css.map">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/css/bootstrap-material-design.min.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/css/bootstrap-material-design.min.css.map">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/css/bootstrap.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/css/bootstrap.min.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/css/cbstyle.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/css/prettify.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/css/ripples.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/css/ripples.css.map">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/css/ripples.min.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/css/ripples.min.css.map">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/images/cbdown.png">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/images/favicon.ico">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/images/glyphicons-halflings-white.png">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/images/glyphicons-halflings.png">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/images/nav-bg.gif">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/images/ui-icons_222222_256x240.png">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/images/ui-icons_454545_256x240.png">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/images/ui-icons_888888_256x240.png">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/javascripts/bootstrap.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/javascripts/bootstrap.min.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/javascripts/cbscript.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/javascripts/githubrepo.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/javascripts/jquery.smooth-scroll.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/javascripts/jquery.smooth-scroll.min.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/javascripts/material.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/javascripts/material.min.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/javascripts/material.min.js.map">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/javascripts/prettify.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/javascripts/ripples.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/javascripts/ripples.min.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/javascripts/ripples.min.js.map">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/jquery/jquery-1.8.3.min.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/jqueryui/jquery-ui-1.9.1.custom.min.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/less/cbstyle.less">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/less/variable.less">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/css/shCore.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/css/shCoreDefault.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/css/shCoreDjango.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/css/shCoreEclipse.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/css/shCoreEmacs.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/css/shCoreFadeToGrey.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/css/shCoreMDUltra.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/css/shCoreMidnight.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/css/shCoreRDark.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/css/shThemeDefault.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/css/shThemeDjango.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/css/shThemeEclipse.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/css/shThemeEmacs.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/css/shThemeFadeToGrey.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/css/shThemeMDUltra.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/css/shThemeMidnight.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/css/shThemeRDark.css">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shAutoloader.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushAppleScript.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushAS3.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushBash.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushColdFusion.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushCpp.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushCSharp.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushCss.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushDelphi.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushDiff.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushErlang.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushGroovy.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushHaxe.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushJava.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushJavaFX.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushJScript.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushPerl.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushPhp.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushPlain.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushPowerShell.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushPython.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushRuby.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushSass.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushScala.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushSql.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushTAP.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushTypeScript.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushVb.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shBrushXml.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shCore.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/shLegacy.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/sh/js/xregexp-min.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/src/javascripts/jquery.tocify.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/src/javascripts/jquery.tocify.min.js">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/src/stylesheets/jquery.tocify.css">
+      <publishTime>11/16/2020 22:42:14</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/styles/bootstrap.css">
+      <publishTime>11/16/2020 22:42:14</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/styles/bootstrap.min.css">
+      <publishTime>11/16/2020 22:42:14</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/styles/jquery.ui.all.css">
+      <publishTime>11/16/2020 22:42:14</publishTime>
+    </File>
+    <File Include="Petitionz-documentation/libs/styles/prettify.css">
+      <publishTime>11/16/2020 22:42:14</publishTime>
+    </File>
+    <File Include="Petitionz/404.html">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/css/style-blue.css">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/css/style-blue.min.css">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/css/style-default.css">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/css/style-default.min.css">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/css/style-navy.css">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/css/style-navy.min.css">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/css/style-olive.css">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/css/style-olive.min.css">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/css/style-orange.css">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/css/style-orange.min.css">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/css/style-pink.css">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/css/style-pink.min.css">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/css/style-red.css">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/css/style-red.min.css">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/css/style-violet.css">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/css/style-violet.min.css">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/404.jpg">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/android-icon-144x144.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/android-icon-192x192.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/android-icon-36x36.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/android-icon-48x48.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/android-icon-72x72.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/android-icon-96x96.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/apple-icon-114x114.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/apple-icon-120x120.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/apple-icon-144x144.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/apple-icon-152x152.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/apple-icon-180x180.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/apple-icon-57x57.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/apple-icon-60x60.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/apple-icon-72x72.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/apple-icon-76x76.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/apple-icon-precomposed.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/apple-icon.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/apple-touch-icon.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/browserconfig.xml">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/favicon-16x16.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/favicon-32x32.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/favicon-96x96.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/favicon.ico">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/favicon.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/manifest.json">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/ms-icon-144x144.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/ms-icon-150x150.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/ms-icon-310x310.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/favicon/ms-icon-70x70.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/icons/abstract-five.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/icons/abstract-four.png">
+      <publishTime>11/16/2020 22:42:04</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/icons/abstract-one.png">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/icons/abstract-seven.png">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/icons/abstract-six.png">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/icons/abstract-three.png">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/icons/abstract-two.png">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/icons/award.png">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/icons/doc-icon.png">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/icons/doc-pen-icon.png">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/icons/people-icon.png">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/map-icon.png">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/opengraph/fbphoto-476-476.png">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/petitionz-logo.png">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/img/twittercardimg/twittercard-144-144.png">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/js/custom.js">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/js/jqcbxgooglemap.js">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/js/theme.js">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/js/theme.min.js">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/blogs.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/common.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/footer.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/form.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/header.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/home.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/listing.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/mixins.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/mixins/bootvar.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/mixins/color.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/mixins/elements.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/mixins/font-rem.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/petition.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/responsive.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/style-default.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/switcher-theme.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/tableofcontent.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/themeinfo.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/typography.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/variables.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/variation/style-blue.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/variation/style-navy.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/variation/style-olive.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/variation/style-orange.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/variation/style-pink.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/variation/style-red.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/less/variation/style-violet.less">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/switcher/switcher.js">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap-material/css/bootstrap-material-design.css">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap-material/css/bootstrap-material-design.css.map">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap-material/css/bootstrap-material-design.min.css">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap-material/css/bootstrap-material-design.min.css.map">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap-material/css/ripples.css">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap-material/css/ripples.css.map">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap-material/css/ripples.min.css">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap-material/css/ripples.min.css.map">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap-material/js/material.js">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap-material/js/material.min.js">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap-material/js/material.min.js.map">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap-material/js/ripples.js">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap-material/js/ripples.min.js">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap-material/js/ripples.min.js.map">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap/css/bootstrap-theme.css">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap/css/bootstrap-theme.css.map">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap/css/bootstrap-theme.min.css">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap/css/bootstrap-theme.min.css.map">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap/css/bootstrap.css">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap/css/bootstrap.css.map">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap/css/bootstrap.min.css">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap/css/bootstrap.min.css.map">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap/js/bootstrap.js">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap/js/bootstrap.min.js">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/bootstrap/js/npm.js">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/counterup/jquery.counterup.js">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/counterup/jquery.counterup.min.js">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/datatable/jquery.datatables.min.css">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/datatable/jquery.datatables.min.js">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/fontawesome/css/font-awesome.css">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/fontawesome/css/font-awesome.min.css">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/fontawesome/fonts/fontawesome-webfont.eot">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/fontawesome/fonts/fontawesome-webfont.svg">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/fontawesome/fonts/fontawesome-webfont.ttf">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/fontawesome/fonts/fontawesome-webfont.woff">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/fontawesome/fonts/fontawesome-webfont.woff2">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/fontawesome/fonts/FontAwesome.otf">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/.gitignore">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/.jshintrc">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/.npmignore">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/angularjs.html">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/basic-plus.html">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/basic.html">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/bower-version-update.js">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/bower.json">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/CONTRIBUTING.md">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/cors/postmessage.html">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/cors/result.html">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/css/demo-ie8.css">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/css/demo.css">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/css/jquery.fileupload-noscript.css">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/css/jquery.fileupload-ui-noscript.css">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/css/jquery.fileupload-ui.css">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/css/jquery.fileupload.css">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/css/style.css">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/img/loading.gif">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/img/progressbar.gif">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/index.html">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/jquery-ui.html">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/js/app.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/js/canvas-to-blob.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/js/canvas-to-blob.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/js/canvas-to-blob.min.js.map">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/js/cors/jquery.postmessage-transport.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/js/cors/jquery.xdr-transport.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/js/jquery.fileupload-angular.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/js/jquery.fileupload-audio.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/js/jquery.fileupload-image.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/js/jquery.fileupload-jquery-ui.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/js/jquery.fileupload-process.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/js/jquery.fileupload-ui.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/js/jquery.fileupload-validate.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/js/jquery.fileupload-video.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/js/jquery.fileupload.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/js/jquery.iframe-transport.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/js/load-image.all.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/js/load-image.all.min.js.map">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/js/main.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/js/vendor/jquery.ui.widget.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/LICENSE">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/package.json">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/README.md">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/server/php/docker-compose.yml">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/server/php/Dockerfile">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/server/php/files/.gitignore">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/server/php/files/.htaccess">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/server/php/index.php">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/server/php/UploadHandler.php">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/test/index.html">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-file-upload/test/test.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-sortable/jquery-sortable-min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery-sortable/jquery-sortable.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/jquery/jquery-3.2.1.min.js">
+      <publishTime>11/16/2020 22:42:06</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/magnific/jquery.magnific-popup.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/magnific/magnific-popup.css">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/mustache/mustache.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/mustache/mustache.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/owlcarousel/ajax-loader.gif">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/owlcarousel/owl.carousel.css">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/owlcarousel/owl.carousel.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/owlcarousel/owl.carousel.min.css">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/owlcarousel/owl.carousel.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/owlcarousel/owl.theme.default.css">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/owlcarousel/owl.theme.default.min.css">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/owlcarousel/owl.video.play.png">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/additional-methods.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/additional-methods.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/jquery.validate.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/jquery.validate.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_ar.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_ar.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_bg.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_bg.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_bn_BD.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_bn_BD.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_ca.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_ca.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_cs.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_cs.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_da.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_da.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_de.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_de.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_el.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_el.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_es.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_es.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_es_AR.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_es_AR.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_es_PE.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_es_PE.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_et.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_et.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_eu.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_eu.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_fa.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_fa.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_fi.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_fi.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_fr.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_fr.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_ge.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_ge.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_gl.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_gl.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_he.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_he.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_hr.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_hr.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_hu.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_hu.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_hy_AM.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_hy_AM.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_id.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_id.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_is.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_is.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_it.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_it.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_ja.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_ja.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_ka.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_ka.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_kk.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_kk.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_ko.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_ko.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_lt.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_lt.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_lv.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_lv.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_mk.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_mk.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_my.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_my.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_nl.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_nl.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_no.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_no.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_pl.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_pl.min.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_pt_BR.js">
+      <publishTime>11/16/2020 22:42:08</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_pt_BR.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_pt_PT.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_pt_PT.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_ro.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_ro.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_ru.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_ru.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_si.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_si.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_sk.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_sk.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_sl.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_sl.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_sr.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_sr.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_sr_lat.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_sr_lat.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_sv.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_sv.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_th.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_th.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_tj.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_tj.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_tr.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_tr.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_uk.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_uk.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_vi.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_vi.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_zh.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_zh.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_zh_TW.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/messages_zh_TW.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/methods_de.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/methods_de.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/methods_es_CL.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/methods_es_CL.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/methods_fi.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/methods_fi.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/methods_nl.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/methods_nl.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/methods_pt.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/validation/localization/methods_pt.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/assets/vendor/waypoints/jquery.waypoints.min.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/blog-left-sidebar.html">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/blog-list.html">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/blog-list_nohead.html">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/blog-right-sidebar.html">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/blog.html">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/contact.html">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/create-petition.html">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/gulpfile.js">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/index.html">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/login.html">
+      <publishTime>12/11/2020 09:01:41</publishTime>
+    </File>
+    <File Include="Petitionz/package.json">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/pass-reset.html">
+      <publishTime>12/11/2020 09:01:47</publishTime>
+    </File>
+    <File Include="Petitionz/petition-listing-three-col.html">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/petition-listing.html">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/class.validation.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/contact.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/Mailchimp.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/Mailchimp/Campaigns.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/Mailchimp/Conversations.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/Mailchimp/Ecomm.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/Mailchimp/Exceptions.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/Mailchimp/Folders.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/Mailchimp/Gallery.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/Mailchimp/Goal.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/Mailchimp/Helper.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/Mailchimp/Lists.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/Mailchimp/Mobile.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/Mailchimp/Neapolitan.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/Mailchimp/Reports.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/Mailchimp/Templates.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/Mailchimp/Users.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/Mailchimp/Vip.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/.scrutinizer.yml">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/.travis.yml">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/changelog.md">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/class.phpmailer.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/class.pop3.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/class.smtp.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/composer.json">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/extras/EasyPeasyICS.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/extras/htmlfilter.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/extras/ntlm_sasl_client.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/extras/README.md">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-am.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-ar.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-az.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-be.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-bg.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-br.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-ca.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-ch.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-cz.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-de.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-dk.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-el.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-eo.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-es.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-et.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-fa.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-fi.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-fo.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-fr.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-gl.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-he.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-hr.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-hu.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-id.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-it.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-ja.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-ka.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-lt.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-lv.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-ms.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-nl.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-no.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-pl.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-pt.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-ro.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-ru.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-se.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-sk.php">
+      <publishTime>11/16/2020 22:42:10</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-sl.php">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-sr.php">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-tr.php">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-uk.php">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-vi.php">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-zh.php">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/language/phpmailer.lang-zh_cn.php">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/LICENSE">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/PHPMailerAutoload.php">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/README.md">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/travis.phpunit.xml.dist">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/php/phpmailer/VERSION">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/php/server/php/files/.gitignore">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/php/server/php/files/1.htaccess">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/php/server/php/index.php">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/php/server/php/UploadHandler.php">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/php/signature.php">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/php/subscribe.php">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/referendum-detail.html">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/signature-list.html">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/signup.html">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/single-petition.html">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Petitionz/typography.html">
+      <publishTime>11/16/2020 22:42:12</publishTime>
+    </File>
+    <File Include="Proponi.aspx">
+      <publishTime>11/16/2020 22:42:14</publishTime>
+    </File>
+    <File Include="Referendum.aspx">
+      <publishTime>12/20/2020 05:48:18</publishTime>
+    </File>
+    <File Include="Shared/Layout.Master">
+      <publishTime>12/12/2020 07:52:54</publishTime>
+    </File>
+    <File Include="Signup.aspx">
+      <publishTime>12/20/2020 12:23:20</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/20/2020 12:29:39</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

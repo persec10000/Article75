@@ -1,0 +1,247 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.Master.cs" Inherits="Article75.Layout" %>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="Header_Layout" runat="server">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- The above 3 meta tags *must* come first in the head -->
+
+        <meta name="description" content="simple description for your site">
+        <meta name="keywords" content="keyword1, keyword2">
+        <meta name="author" content="Anca Georgeta">
+
+        <!-- twitter card starts from here, if you don't need remove this section -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:creator" content="">
+        <meta name="twitter:url" content="http://yourdomain.com">
+        <meta name="twitter:title" content="Your home page title, max 140 char"> <!-- maximum 140 char -->
+        <meta name="twitter:description" content="Your site description, maximum 140 char "> <!-- maximum 140 char -->
+        <meta name="twitter:image" content="assets/img/twittercardimg/twittercard-144-144.png">  <!-- when you post this page url in twitter , this image will be shown -->
+        <!-- facebook open graph starts from here, if you don't need then delete open graph related  -->
+        <meta property="og:title" content="Your home page title">
+        <meta property="og:url" content="http://your domain here.com">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:site_name" content="Your site name here">
+        <!--meta property="fb:admins" content="" /-->  <!-- use this if you have  -->
+        <meta property="og:type" content="website"> <!-- 'article' for single page  -->
+        <meta property="og:image" content="assets/img/opengraph/fbphoto-476-476.png"> <!-- when you post this page url in facebook , this image will be shown -->
+        <!-- facebook open graph ends here -->
+        <!-- desktop bookmark -->
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="CSS_Link" runat="server">
+        <!-- icons & favicons -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">  <!-- this icon shows in browser toolbar -->
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"> <!-- this icon shows in browser toolbar -->
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/img/favicon/manifest.json">
+
+        <!--  FAVICON AND TOUCH ICONS -->
+        <link rel="icon" type="image/png" href="assets/img/favicon/favicon.png">
+        <link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png">
+
+        <!-- BOOTSTRAP CSS -->
+        <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+
+        <!--Bootstrap material CSS-->
+        <link rel="stylesheet" href="assets/vendor/bootstrap-material/css/bootstrap-material-design.min.css">
+        <!--<link rel="stylesheet" href="assets/vendor/bootstrap-material/css/ripples.min.css" />-->
+        <!-- FONT AWESOME CSS -->
+        <link rel="stylesheet" href="assets/vendor/fontawesome/css/font-awesome.min.css">
+
+        <!-- GOOGLE FONT -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CSource+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+        <!-- jQuery Data Table -->
+        <link rel="stylesheet" href="assets/vendor/datatable/jquery.datatables.min.css" media="all">
+
+
+        <!-- Owlcarousel -->
+        <link rel="stylesheet" href="assets/vendor/owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/vendor/owlcarousel/owl.theme.default.min.css">
+
+        <!-- Magnific -->
+        <link rel="stylesheet" href="assets/vendor/magnific/magnific-popup.css">
+
+        <!-- jquery-file-upload -->
+        <link rel="stylesheet" href="assets/vendor/jquery-file-upload/css/jquery.fileupload.css">
+
+        <!-- MASTER  STYLESHEET  -->
+        <link id="cbx_style" rel="stylesheet" href="assets/css/style-default.min.css" media="all">
+
+        <link rel="stylesheet" href="assets/css/custom.css" media="all">
+        <!-- Google plus comments api -->
+        <script src="https://apis.google.com/js/plusone.js"></script>
+
+        <!-- jQuery JS  -->
+        <script src="assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header id="header">
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar ">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar-collapse" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="home.aspx">
+                                    <!--<i class="fa fa-envelope-open" aria-hidden="true"></i> PetitionZ-->
+                                    <img src="assets/img/petitionz-logo.png" alt="petitionz-logo">
+                                </a>
+                            </div>
+
+                            <div class="header-top-menu-bar">
+                                <asp:Label ID="lblUtente" runat="server" Text="Utente" Visible="true"></asp:Label>&nbsp;|&nbsp;
+                                <% if (Session["Utente"] != null){ %>
+                                <asp:Button ID="LogOutBtn" runat="server" OnClick="LogOut_Click" class="btn btn-light btn-sm" style="padding: 7px 12px !important;" Text="Log Out" />
+                                <% }else{%>
+                                <asp:Button ID="LogInBtn" runat="server" class="btn btn-light btn-sm" style="padding: 7px 12px !important;" Text="Log In" OnClick="LogIn_click"/>
+                                <% }%>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="header-navbar-collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li <% if (Request["p"] == "1"){ %>class="active"<% }%>><a href="Referendum.aspx?p=1">Elenco Referendum</a></li>
+                                    <li <% if (Request["p"] == "2"){ %>class="active"<% }%>><a href="Associazione.aspx?p=2">L'associazione</a></li>
+                                    <li <% if (Request["p"] == "3"){ %>class="active"<% }%>><a href="Fondi.aspx?p=3">Fondi</a></li>
+                                    <li <% if (Request["p"] == "4"){ %>class="active"<% }%>><a href="Contattaci.aspx?p=4">Contattaci</a></li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <main id="main">
+                <asp:ContentPlaceHolder ID="RenderBody" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+            
+            <asp:ContentPlaceHolder ID="Footer_Layout" runat="server">
+                <!--FOOTER START-->
+                <footer id="footer">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-5">
+                                <div class="footer-single footer-about">
+                                    <h2 class="title footer-logo"><a href="home.aspx"><img src="assets/img/petitionz-logo.png" alt="PetitionZ logo" class="img-responsive"></a></h2>
+                                    <p>Articolo75.it è insufficiente per una rappresentatività delle proprie volontà MA è necessario per garantire visibilità alle tematiche e che quantomeno si impedisca di legiferare contro le maggioranze e speriamo che risvegli quel senso di giustizia che muova anche chi non toccato direttamente da una legge ingiusta secondo molti concittadini, cosi che si informi e voti a favore o contro.</p>
+                                    <ul class="list-unstyled social-area">
+                                        <li><a href="http://facebook.com/freewebsitetemplates" class="facebook" target="_blank"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+					                    <li><a href="http://twitter.com/fwtemplates" class="twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                    <p>No Copyright 2020 - solo (pre)potenti, politici o interessi individualistici giustificherebbero il copiare questo sito. Tutti possono partecipare. Tutti possono decidere sui fondi.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-md-push-1">
+                              <h4>Navigation</h4>
+                              <ul class="colorlib-footer-links">
+                                <li><a href="Home.aspx">Home</a></li>
+                                <li><a href="Referendum.aspx?p=1">Elenco Referendum</a></li>
+                                <li><a href="Associazione.aspx?p=2">L'associazione</a></li>
+                                <li><a href="Fondi.aspx?p=3">Fondi</a></li>
+                                <li><a href="CambiaPassword.aspx">Cambio Password</a></li>
+                             </ul>
+
+                            </div>
+                            <div class="col-md-3 col-md-push-1">
+                              <h4>Contattaci</h4>
+                              <ul class="colorlib-footer-links">
+                                <li>Articolo75.it è un processo automatico</li>
+                                <li>Potete partecipare tramite l'<a href=""><font style="color:blue;">Associazione Articolo75.it</font></a></li>
+                              </ul>
+                            </div><!--//.col-->
+                        </div> <!--//.main row-->
+                    </div> <!--//.container-->
+                </footer> <!--//.FOOTER END-->
+            </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="JS_Link" runat="server">
+                <!-- *** ADD YOUR SITE SCRIPT HERE *** -->
+                  
+                
+                <!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script-->
+                <!-- BOOTSTRAP JS and Material  -->
+                <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+                <script src="assets/vendor/bootstrap-material/js/material.min.js"></script>
+
+
+                <!-- jquery sortable js -->
+                <script src="assets/vendor/jquery-sortable/jquery-sortable-min.js"></script>
+
+                <!-- Owlcarousel -->
+                <script src="assets/vendor/owlcarousel/owl.carousel.js"></script>
+
+                <!-- Magnific popup -->
+                <script src="assets/vendor/magnific/jquery.magnific-popup.js"></script>
+
+
+                <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+                <script src="assets/vendor/counterup/jquery.counterup.min.js"></script>
+
+                <!-- mustache.js -->
+                <script src="assets/vendor/mustache/mustache.min.js"></script>
+
+                <!-- jquery-file-upload -->
+                <script src="assets/vendor/jquery-file-upload/js/vendor/jquery.ui.widget.js"></script>
+                <script src="assets/vendor/jquery-file-upload/js/load-image.all.min.js"></script>
+                <script src="assets/vendor/jquery-file-upload/js/canvas-to-blob.min.js"></script>
+                <script src="assets/vendor/jquery-file-upload/js/jquery.iframe-transport.js"></script>
+                <script src="assets/vendor/jquery-file-upload/js/jquery.fileupload.js"></script>
+                <script src="assets/vendor/jquery-file-upload/js/jquery.fileupload-process.js"></script>
+                <script src="assets/vendor/jquery-file-upload/js/jquery.fileupload-image.js"></script>
+                <script src="assets/vendor/jquery-file-upload/js/jquery.fileupload-validate.js"></script>
+
+                <!-- jQuery Validator -->
+                <script src="assets/vendor/validation/jquery.validate.min.js"></script>
+
+
+                <!-- google map plugin -->
+                <script src="assets/js/jqcbxgooglemap.js"></script>
+
+                <!-- PetitionZ SCRIPT  -->
+                <script src="assets/js/theme.min.js"></script>
+
+
+                <!-- CUSTOM SCRIPT  -->
+                <script src="assets/js/custom.js"></script>
+            </asp:ContentPlaceHolder>
+
+            <!--
+            <script id="switcherhandle" type="text/javascript" src="assets/switcher/switcher.js"></script>
+            <div class="switcher-loader"><div class="cbx-switcher-area"><div class="cbx-switcher-inner"><a id="cbx-switcher-btn" class="cbx-switcher-btn" href="#"><span class="fa fa-cog fa-spin" aria-hidden="true"></span></a><div id="cbx-switcher-body" class="cbx-switcher-body cbx-hide"><span class="cbx-switcher-text text-center"> Style Switcher</span><ul class="list-unstyled clearfix cbx-switcher-list"><li class="cbx-list-default"><a href="#" class="cbx-switcher-clr-btn" data-color-name="-default"></a></li><li class="cbx-list-red"><a href="#" class="cbx-switcher-clr-btn" data-color-name="-red"></a></li><li class="cbx-list-orange"><a href="#" class="cbx-switcher-clr-btn" data-color-name="-orange"></a></li><li class="cbx-list-blue"><a href="#" class="cbx-switcher-clr-btn" data-color-name="-blue"></a></li><li class="cbx-list-olive"><a href="#" class="cbx-switcher-clr-btn" data-color-name="-olive"></a></li><li class="cbx-list-violet"><a href="#" class="cbx-switcher-clr-btn" data-color-name="-violet"></a></li><li class="cbx-list-pink"><a href="#" class="cbx-switcher-clr-btn" data-color-name="-pink"></a></li><li class="cbx-list-navy"><a href="#" class="cbx-switcher-clr-btn" data-color-name="-navy"></a></li></ul></div></div></div></div>
+            -->
+        </div>
+    </form>
+</body>
+</html>
