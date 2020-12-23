@@ -60,7 +60,7 @@ namespace Article75
       if (this.Session["Utente"] != null)
         this.CheckUser();
       else
-        this.Server.Transfer("Login.aspx");//Conferma
+        this.Server.Transfer("Conferma.aspx");//Login
     }
 
     protected void btnConteggia_Click(object sender, EventArgs e)
@@ -81,7 +81,7 @@ namespace Article75
       if (this.Session["Utente"] != null)
         this.CheckUser();
       else
-        this.Server.Transfer("Login.aspx");//Conferma
+        this.Server.Transfer("Conferma.aspx");//Login
     }
 
     protected void BtnSi2_Click(object sender, EventArgs e)
@@ -92,7 +92,7 @@ namespace Article75
       if (this.Session["Utente"] != null)
         this.CheckUser();
       else
-        this.Server.Transfer("Login.aspx");//Conferma
+        this.Server.Transfer("Conferma.aspx");//Login
     }
 
     protected void BtnNo2_Click(object sender, EventArgs e)
@@ -103,7 +103,7 @@ namespace Article75
       if (this.Session["Utente"] != null)
         this.CheckUser();
       else
-        this.Server.Transfer("Login.aspx");//Conferma
+        this.Server.Transfer("Conferma.aspx");//Login
     }
 
     protected void BtnSi3_Click(object sender, EventArgs e)
@@ -114,7 +114,7 @@ namespace Article75
       if (this.Session["Utente"] != null)
         this.CheckUser();
       else
-        this.Server.Transfer("Login.aspx");//Conferma
+        this.Server.Transfer("Conferma.aspx");//Login
     }
 
     protected void BtnNo3_Click(object sender, EventArgs e)
@@ -125,7 +125,7 @@ namespace Article75
       if (this.Session["Utente"] != null)
         this.CheckUser();
       else
-        this.Server.Transfer("Login.aspx");//Conferma
+        this.Server.Transfer("Conferma.aspx");//Login
     }
 
     protected void Detail_Click(object sender, EventArgs e)
@@ -153,7 +153,7 @@ namespace Article75
         {
           this.Utility.IDUTE = this.ute.IDUTE;
           string str = new CReferendum().DammiNomeReferendum(this.Application["IDReferendum"].ToString());
-          switch (this.Utility.WriteConfirm(this.Session["Utente"].ToString(), this.Utility.Comune, this.Application["IDReferendum"].ToString(), this.Application["SI"].ToString(), "SI"))
+          switch (this.Utility.WriteConfirmReferendum(this.Session["Utente"].ToString(), this.Utility.Comune, this.Application["IDReferendum"].ToString(), this.Application["SI"].ToString(), "SI"))
           {
             case 0:
             //"Thanks, you will receive a confirmation email shortly."

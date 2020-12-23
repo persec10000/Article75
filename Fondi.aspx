@@ -462,7 +462,7 @@
 
 
 
-            <div class="row" style="display:block">
+            <div class="row" style="display:none">
 
                 <div class="col-sm-6 col-xs-12  petition-item-box">
 
@@ -576,7 +576,7 @@
 
             </div>
 
-            <div class="row" style="display:block">
+            <div class="row" style="display:none">
 
                 <div class="col-sm-6 col-xs-12  petition-item-box">
 
@@ -688,7 +688,7 @@
 
             </div>
 
-            <div class="row" style="display:block">
+            <div class="row" style="display:none">
 
                 <div class="col-sm-6 col-xs-12  petition-item-box">
 
@@ -800,7 +800,7 @@
 
             </div>
 
-            <div class="row" style="display:block">
+            <div class="row" style="display:none">
 
                 <div class="col-xs-12">
 

@@ -162,7 +162,7 @@ namespace Article75
         {
           this.Utility.IDUTE = this.ute.IDUTE;
           string str = new CReferendum().DammiNomeReferendum(this.Application["IDReferendum"].ToString());
-          switch (this.Utility.WriteConfirm(this.Session["Utente"].ToString(), this.Utility.Comune, this.Application["IDReferendum"].ToString(), this.Application["SI"].ToString(), "SI"))
+          switch (this.Utility.WriteConfirmReferendum(this.Session["Utente"].ToString(), this.Utility.Comune, this.Application["IDReferendum"].ToString(), this.Application["SI"].ToString(), "SI"))
           {
             case 0:
               MessageBox.Show("Grazie, riceverai a breve una email di conferma.");

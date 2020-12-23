@@ -103,7 +103,18 @@ namespace Article75
             this.Session["ID"] = (object) this.ute.IDUTE;
             if (this.ute.IDUTE.Equals(""))
             {
-              MessageBox.Show("Un-Registered Email");
+            //MessageBox.Show("Un-Registered Email");
+            UtilityDB utilityDb = new UtilityDB();
+            int ret = 
+            utilityDb.WriteConfirmAssociation(email, this.txtComune.Text, this.txtNome.Text,this.txtCognome.Text, tipo);
+            if(ret == 3)
+                            {
+                                MessageBox.Show("Please confirm your email.");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Failed to join member.");
+                            }
               return;
             }
           }

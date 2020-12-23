@@ -75,7 +75,7 @@ namespace Article75
           string comune = this.txtComune.Text.Trim();
           string text = this.lblIDReferendum.Text;
           string SiNo = this.Application["SI"].ToString();
-          switch (utilityDb.WriteConfirm(email, comune, text, SiNo, "NO"))
+          switch (utilityDb.WriteConfirmReferendum(email, comune, text, SiNo, "NO"))
           {
             case 0:
               //Thanks, you will receive a confirmation email shortly.
