@@ -276,7 +276,7 @@ namespace Article75
 
 
         //Write Confirm
-        public int WriteConfirm(string email, string comune, string IDReferendum, string SiNo, string logato)
+        public int WriteConfirmReferendum(string email, string comune, string IDReferendum, string SiNo, string logato)
         {
             int ritorno = 0;
             CKeyGenerator Key = new CKeyGenerator();
@@ -345,6 +345,91 @@ namespace Article75
                 }
                 else
                     return 3;
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show(ex.Message);
+                return 0;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public int WriteConfirmAssociation(string email, string comune, string name, string surname, int typo)
+        {
+            int ritorno = 0;
+            CKeyGenerator Key = new CKeyGenerator();
+            string Token = Key.GetUniqueKey(15, false);
+            string strConn = ConfigurationManager.ConnectionStrings["connDB"].ConnectionString;
+            OleDbConnection conn = new OleDbConnection(strConn);
+
+            //SendEmailConfirm("persec10000@gmail.com", "fL92P34IhAWQHDJ");
+            //alert('send mail: ');
+            try
+            {
+                int records = 0;
+                bool Mail = false;
+                Mail = CheckEmail(email);
+
+                // Non ho la mail, quindi nuovo utente da registrare.
+                // I don't have the email, so new user to register.
+
+                if (!Mail)
+                {
+                    conn.Open();
+
+                    using (OleDbCommand insertCommand =
+                        new OleDbCommand("INSERT INTO Utenti ([Utente],[Comune],[Email],[Token],[Nome],[Cognome],[Password],[Responsabile],[Volontario],[MembroAnonimo]) VALUES (?,?,?,?,?,?,?,?,?,?)", conn))
+                    {
+
+                        insertCommand.Parameters.AddWithValue("@Utente", "Anonimo");
+
+                        insertCommand.Parameters.AddWithValue("@Comune", comune);
+                        insertCommand.Parameters.AddWithValue("@Email", email);
+
+                        insertCommand.Parameters.AddWithValue("@Token", Token);
+
+                        insertCommand.Parameters.AddWithValue("@Nome", name);
+
+                        insertCommand.Parameters.AddWithValue("@Cognome", surname);
+
+                        insertCommand.Parameters.AddWithValue("@Password", "");
+                        switch (typo)
+                        {
+                            case 1:
+                                insertCommand.Parameters.AddWithValue("@Responsabile", true);
+                                insertCommand.Parameters.AddWithValue("@Volontario", false);
+                                insertCommand.Parameters.AddWithValue("@MembroAnonimo", false);
+                                break;
+
+                            case 2:
+                                insertCommand.Parameters.AddWithValue("@Volontario", true);
+                                insertCommand.Parameters.AddWithValue("@Responsabile", false);
+                                insertCommand.Parameters.AddWithValue("@MembroAnonimo", false);
+                                break;
+
+                            default:
+                                insertCommand.Parameters.AddWithValue("@MembroAnonimo", true);
+                                insertCommand.Parameters.AddWithValue("@Volontario", false);
+                                insertCommand.Parameters.AddWithValue("@Responsabile", false);
+                                break;
+                        }
+                        records = insertCommand.ExecuteNonQuery();
+
+                        insertCommand.Dispose();
+                    }
+                    conn.Close();
+
+                    if (records <= 0)
+                        return 1;
+                    else
+                        CheckEmail(email);
+                }
+                SendEmailConfirm(email, Token);                
+
+                return 3;
             }
             catch (Exception ex)
             {
