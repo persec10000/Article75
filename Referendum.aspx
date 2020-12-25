@@ -4,7 +4,7 @@
 
     <div class="not-alone">
 
-        <div-- class="container-fluid container-fluid-referendum">
+        <div class="container-fluid container-fluid-referendum">
 
             <!--div class="row"-->
 
@@ -41,7 +41,7 @@
 
                                         <div class="content-line">
                                             <!--a href="Petitionz/referendum-detail.html" style="color:#ffffff;"-->
-                                            <a href="ReferendaDetail.aspx" style="color:#ffffff;">
+                                            <a href="ReferendaDetail.aspx?id=4&title=Contro Chiesa" style="color:#ffffff;">
                                             <asp:Label ID="lblDescrizione1" runat="server" Text="Descrizione1"></asp:Label>
 
                                             
@@ -50,7 +50,7 @@
                                             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                            </!--a>
+                                            </a>
                                         </div>
 
                                     </div>
@@ -114,7 +114,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
                                         </div>
 
                                         <div class="content-line">
-                                            <a href="ReferendaDetail.aspx" style="color:#ffffff;">
+                                            <a href="ReferendaDetail.aspx?id=3&title=Contro Parlamento" style="color:#ffffff;">
                                             <asp:Label ID="lblDescrizione2" runat="server" Text="Descrizione2"></asp:Label>
                                                 
                         <asp:Label ID="lblID2" runat="server" Text="ID" Font-Size="6pt" Visible="False"></asp:Label>            
@@ -182,7 +182,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
                                         </div>
 
                                         <div class="content-line">
-                                            <a href="ReferendaDetail.aspx" style="color:#ffffff;">
+                                            <a href="ReferendaDetail.aspx?id=1&title=Contro Cip6" style="color:#ffffff;">
                                             <asp:Label ID="lblDescrizione3" runat="server" Text="Descrizione3"></asp:Label>
                                                 
                         <asp:Label ID="lblID3" runat="server" Text="ID" Font-Size="6pt" Visible="False"></asp:Label>     
@@ -239,7 +239,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
                     
 
-                    </p><p style="text-align:center;display:none;" >
+                    </p><p style="text-align:center;display:block;" >
 
                         <a href="Proponi.aspx" style="margin-top: 20px;" class="btn btn-brand btn-cta">Proponi un referendum</a>
 
@@ -679,10 +679,10 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 
         </div>
-            <!--/div-->
+            </div>
 
         </div>
 
-    </div>
+    <!--/div-->
 
 </asp:Content>

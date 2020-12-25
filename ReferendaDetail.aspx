@@ -12,8 +12,12 @@
 
                         <div class="col-xs-12">
 
-                            <h2 class="h1 section-heading section-heading-white">Contro Chiesa</h2>
+                            <h1 class="h1 section-heading section-heading-white">                          
 
+                                <asp:Label ID="lblTitle" runat="server" Text="Title"></asp:Label>
+                                <asp:Label ID="lblId" runat="server" Text="Title" Visible="false"></asp:Label>
+                            </h1>
+                            
                             <div class="progress-wrapper progress-wrapper-white">
 
                                 <div class="progress small">
@@ -89,9 +93,9 @@
                             </div>
 
                             <div class="social text-right">
-
-                                <a href="#sign-this-petition" class="btn btn-brand btn-cta pull-right">NO</a>
-                                <a href="#sign-this-petition" class="btn btn-brand btn-cta pull-right">SI</a>
+                                <asp:Button ID="BtnNo1" runat="server" onclick="BtnNo1_Click" class="btn btn-brand" Text="NO"/>	
+                                <asp:Button ID="BtnYes1" runat="server" onclick="BtnYes1_Click" class="btn btn-brand btn-cta pull-right" Text="SI"/>	
+                                
 
                             </div>
 
@@ -183,7 +187,10 @@
 
                         <div class="col-xs-12 col-md-6 petition-video-info">
 
-                            <h4>Contro Chiesa</h4>
+                            <h4>
+                                <asp:Label ID="lblTitleVideo" runat="server" Text="Title"></asp:Label>
+
+                            </h4>
 
                             <p>
 

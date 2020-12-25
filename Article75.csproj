@@ -851,6 +851,7 @@
     <Content Include="Petitionz\single-petition.html" />
     <Content Include="Petitionz\typography.html" />
     <Content Include="Proponi.aspx" />
+    <Content Include="ReferendaDetail.aspx" />
     <Content Include="Referendum.aspx" />
     <Content Include="Signup.aspx" />
     <Content Include="Web.config" />
@@ -918,6 +919,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proponi.aspx.cs">
       <DependentUpon>Proponi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReferendaDetail.aspx.cs">
+      <DependentUpon>ReferendaDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Referendum.aspx.cs">
