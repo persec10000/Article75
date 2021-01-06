@@ -15,7 +15,7 @@ namespace Article75
         private CFund fundManage = new CFund();
         private CUtente ute = new CUtente();
         protected Button BtnYes1;
-        protected Button BtnNo1;
+        protected Button BtnNo111;
         protected Label lblTitle;
         protected Label lblTitleVideo;
         protected Label lblId;
@@ -32,11 +32,12 @@ namespace Article75
             this.lblTitleVideo.Text = this.strTitle;
             this.lblId.Text = this.strId;
         }
-        protected void BtnNo1_Click(object sender, EventArgs e)
+
+        protected void BtnNo111_Click(object sender, EventArgs e)
         {
             int nRet;
             int idFund = int.Parse(this.Application["IDFondi"].ToString());
-            int idUser = int.Parse(this.Session["ID"].ToString());
+            int idUser = int.Parse(this.strId); 
             this.Application["SI"] = (object)"NO";
             this.Application["Fondi"] = (object)this.strTitle;
             this.Application["IDFondi"] = (object)this.strId;
@@ -45,14 +46,14 @@ namespace Article75
                 nRet = this.fundManage.CountingFund(idFund, idUser, this.Application["SI"].ToString());
             }
             else
-                this.Server.Transfer("Conferma.aspx");//Login
+                this.Server.Transfer("Login.aspx");
         }
-
+        
         protected void BtnYes1_Click(object sender, EventArgs e)
         {
             int nRet;
             int idFund = int.Parse(this.Application["IDFondi"].ToString());
-            int idUser = int.Parse(this.Session["ID"].ToString());
+            int idUser = int.Parse(this.strId);//this.Session["ID"].ToString()
             this.Application["SI"] = (object)"SI";
             this.Application["Fondi"] = (object)this.strTitle;
             this.Application["IDFondi"] = (object)this.strId;
@@ -61,7 +62,7 @@ namespace Article75
                 nRet = this.fundManage.CountingFund(idFund, idUser, this.Application["SI"].ToString());
             }
             else
-                this.Server.Transfer("Conferma.aspx");//Login
+                this.Server.Transfer("Login.aspx");//Login
         }
 
     }

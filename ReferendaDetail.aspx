@@ -93,8 +93,8 @@
                             </div>
 
                             <div class="social text-right">
-                                <asp:Button ID="BtnNo1" runat="server" onclick="BtnNo1_Click" class="btn btn-brand" Text="NO"/>	
-                                <asp:Button ID="BtnYes1" runat="server" onclick="BtnYes1_Click" class="btn btn-brand btn-cta pull-right" Text="SI"/>	
+                                <asp:Button ID="BtnNo1" runat="server" onclick="BtnNo1_Click" class="btn btn-brand" Text="NO" UseSubmitBehavior="False"/>	
+                                <asp:Button ID="BtnYes1" runat="server" onclick="BtnYes1_Click" class="btn btn-brand" Text="SI" UseSubmitBehavior="False"/>	
                                 
 
                             </div>
@@ -979,7 +979,7 @@
 
                                   <div class="col-md-12">
 
-                                    <textarea class="form-control" required data-rule-minlength="20" id="detailed-updates" name="sf-detailed-updates" cols="30" rows="6" placeholder="PERCHE VOTARE SI"></textarea>
+                                    <textarea class="form-control" id="detailed-updates" name="sf-detailed-updates" cols="30" rows="6" placeholder="PERCHE VOTARE SI"></textarea>
 
                                   </div>
 
@@ -991,9 +991,9 @@
 
                                   <div class="col-md-12">
 
-                                    <textarea class="form-control" required data-rule-minlength="20" id="detailed-updates"
+                                    <textarea class="form-control" id="detailed-updates"
                                         name="sf-detailed-updates" cols="30" rows="6" placeholder="PERCHE VOTARE NO"></textarea>
-
+                                      
                                   </div>
 
                                 </div>
