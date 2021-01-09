@@ -344,7 +344,11 @@ namespace Article75
                     return ritorno;
                 }
                 else
-                    return 3;
+                {
+                    int idReferendum = int.Parse(IDReferendum.ToString());
+                    ritorno = UpdatingReferendum(idReferendum, 0, SiNo);
+                    return 2;// 3;//2020.1.10
+                }
             }
             catch (Exception ex)
             {
@@ -442,9 +446,107 @@ namespace Article75
             }
         }
 
+        public int UpdatingReferendum(int IDReferendum, int IDUtente, string SiNo)//UpdatingReferendum
+        {
+            int nRet = 0;
+            string strConn = ConfigurationManager.ConnectionStrings["connDB"].ConnectionString;
+            OleDbConnection conn = new OleDbConnection(strConn);
+            string strquery;
+            try
+            {
+                conn.Open();
+                using (OleDbCommand selectCommand = new OleDbCommand("SELECT * FROM ReferendumUtenti WHERE IDUtente=@IDUtente AND IDReferendum=@IDReferendum", conn))
+                {
+                    selectCommand.Parameters.Add("@IDUtente", OleDbType.Integer).Value = _IDUte;
+                    selectCommand.Parameters.Add("@IDReferendum", OleDbType.Integer).Value = IDReferendum;
+                    OleDbDataReader drFundUser = selectCommand.ExecuteReader();
+                    if (drFundUser.Read())
+                    {//update
+                        int nIDofFundUser = int.Parse(drFundUser.GetValue(0).ToString());
+                        using (OleDbCommand updateCommand = new OleDbCommand("UPDATE ReferendumUtenti SET [SiNo]=? WHERE [ID]=? ", conn))
+                        {
+                            updateCommand.Parameters.AddWithValue("@SiNo", SiNo);
+                            updateCommand.Parameters.AddWithValue("@ID", nIDofFundUser);
+                            updateCommand.ExecuteNonQuery();
+                            updateCommand.Dispose();
+                        }
+                    }
+                    else
+                    {//insert
+                        using (OleDbCommand insertCommand = new OleDbCommand("INSERT INTO ReferendumUtenti ([IDUtente],[IDReferendum],[SiNo]) VALUES (?,?,?)", conn))
+                        {
+                            insertCommand.Parameters.AddWithValue("@IDUtente", _IDUte);
+                            insertCommand.Parameters.AddWithValue("@IDReferendum", IDReferendum);
+                            insertCommand.Parameters.AddWithValue("@SiNo", SiNo);
+                            insertCommand.ExecuteNonQuery();
+                            insertCommand.Dispose();
+                        }
+                    }
+                    selectCommand.Dispose();
+                    drFundUser.Close();
+                }
+
+                // Fund table
+                strquery = "SELECT * FROM Referendum WHERE ID=@ID";
+                OleDbCommand cmdR = new OleDbCommand();
+                cmdR.CommandText = strquery;
+                cmdR.Connection = conn;
+                cmdR.Parameters.Add("@ID", OleDbType.Char).Value = IDReferendum.ToString();
+                OleDbDataReader drR;
+                drR = cmdR.ExecuteReader();
+                if (drR.Read())
+                {
+                    int SI = 0;
+                    int NO = 0;
+
+                    SI = int.Parse(drR.GetValue(4).ToString());
+                    NO = int.Parse(drR.GetValue(5).ToString());
+
+                    drR.Close();
+                    cmdR.Dispose();
+
+                    if (SiNo == "SI")
+                    {
+                        SI = SI + 1;
+                        nRet = SI;
+                    }
+                    else
+                    {
+                        NO = NO + 1;
+                        nRet = NO;
+                    }
+
+
+                    strquery = "UPDATE Referendum SET [Si]=?, [No]=? WHERE [ID]=? ";
+                    using (OleDbCommand updateCommand = new OleDbCommand(strquery, conn))
+                    {
+                        updateCommand.Parameters.AddWithValue("@Si", SI);
+                        updateCommand.Parameters.AddWithValue("@No", NO);
+                        updateCommand.Parameters.AddWithValue("@ID", IDReferendum);
+                        updateCommand.ExecuteNonQuery();
+                        updateCommand.Dispose();
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show(ex.Message);
+                return nRet;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return nRet;
+        }
+
+
+
         private int CountingReferendum(string IDReferendum, bool Mail, string SiNo, bool utente)//CountingReferendum
         {//CountingReferendum
-            int records = 0;
+            int records = 0; 
             string strConn = ConfigurationManager.ConnectionStrings["connDB"].ConnectionString;
             OleDbConnection conn = new OleDbConnection(strConn);
 
