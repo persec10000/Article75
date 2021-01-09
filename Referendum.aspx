@@ -8,7 +8,7 @@
 
             <!--div class="row"-->
 
-                <div class="row-panel">
+                <div class="row-panel" style="display: none;">
 
                     <div class="header-panel">
 
@@ -18,7 +18,7 @@
 
                 </div>
 
-                <div class="row-panel">
+                <div class="row-panel" style="margin-top: 40px;">
 
                     <div class="content-panel">
 

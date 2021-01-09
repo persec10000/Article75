@@ -66,7 +66,9 @@
 
                                         <div class="row">
                                             <label class="col-sm-10" >
+                                                <a href="FondiDetail.aspx?id=1&title=upgrade hospital" style="color:#ffffff;">
                                             <asp:Label ID="lblDesc1" runat="server" Text="Descrizione 1" ></asp:Label>
+                                                    </a>
                                             </label>
                                         </div>
 
@@ -151,7 +153,9 @@
 
                                         <div class="row">
                                             <label class="col-sm-10" >
+                                                <a href="FondiDetail.aspx?id=2&title=Lets build garden with trees" style="color:#ffffff;">
                                             <asp:Label ID="lblDesc2" runat="server" Text="Descrizione 1" ></asp:Label>
+                                                    </a>
                                                 </label>
                                         </div>
 
@@ -236,7 +240,9 @@
 
                                         <div class="row">
                                             <label class="col-sm-10" >
+                                                <a href="FondiDetail.aspx?id=3&title=Let's buy a new wheelchair for Antonio" style="color:#ffffff;">
                                             <asp:Label ID="lblDesc3" runat="server" Text="Descrizione 1" ></asp:Label>
+                                                    </a>
                                                 </label>
                                         </div>
 
@@ -321,7 +327,9 @@
 
                                         <div class="row">
                                             <label class="col-sm-10" >
+                                                <a href="FondiDetail.aspx?id=4&title=plant pear tree" style="color:#ffffff;">
                                             <asp:Label ID="lblDesc4" runat="server" Text="Descrizione 1" ></asp:Label>
+                                                    </a>
                                                 </label>
                                         </div>
 
@@ -406,7 +414,9 @@
 
                                         <div class="row">
                                             <label class="col-sm-10" >
+                                                <a href="FondiDetail.aspx?id=5&title=open concert" style="color:#ffffff;">
                                             <asp:Label ID="lblDesc5" runat="server" Text="Descrizione 1" ></asp:Label>
+                                                    </a>
                                                 </label>
                                         </div>
 

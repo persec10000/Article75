@@ -26,6 +26,7 @@ namespace Article75
             this.strId = this.Request.QueryString["id"];
             this.Application["Referendum"] = (object)this.strTitle;
             this.Application["IDReferendum"] = (object)this.strId;
+            this.Application["Description"] = (object)("Votiamo per "+this.strTitle);
             this.lblTitle.Text = this.strTitle;
             this.lblTitleVideo.Text = this.strTitle;
             this.lblId.Text = this.strId;

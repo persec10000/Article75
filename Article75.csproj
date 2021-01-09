@@ -392,6 +392,7 @@
     <Content Include="Contattaci.aspx" />
     <Content Include="Default1.aspx" />
     <Content Include="Fondi.aspx" />
+    <Content Include="FondiDetail.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
     <Content Include="Italia.aspx" />
@@ -896,6 +897,13 @@
     <Compile Include="Fondi.aspx.cs">
       <DependentUpon>Fondi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FondiDetail.aspx.cs">
+      <DependentUpon>FondiDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FondiDetail.aspx.designer.cs">
+      <DependentUpon>FondiDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

@@ -57,6 +57,7 @@ namespace Article75
       this.Application["SI"] = (object) "SI";
       this.Application["Referendum"] = (object) this.lblTitolo1.Text;
       this.Application["IDReferendum"] = (object) this.lblID1.Text;
+this.Application["Description"] = (object) this.lblDescrizione1.Text;
       if (this.Session["Utente"] != null)
         this.CheckUser();
       else
@@ -78,6 +79,7 @@ namespace Article75
       this.Application["SI"] = (object) "NO";
       this.Application["Referendum"] = (object) this.lblTitolo1.Text;
       this.Application["IDReferendum"] = (object) this.lblID1.Text;
+      this.Application["Description"] = (object) this.lblDescrizione1.Text;
       if (this.Session["Utente"] != null)
         this.CheckUser();
       else
@@ -89,6 +91,7 @@ namespace Article75
       this.Application["SI"] = (object) "SI";
       this.Application["Referendum"] = (object) this.lblTitolo2.Text;
       this.Application["IDReferendum"] = (object) this.lblID2.Text;
+      this.Application["Description"] = (object) this.lblDescrizione2.Text;
       if (this.Session["Utente"] != null)
         this.CheckUser();
       else
@@ -100,6 +103,7 @@ namespace Article75
       this.Application["SI"] = (object) "NO";
       this.Application["Referendum"] = (object) this.lblTitolo2.Text;
       this.Application["IDReferendum"] = (object) this.lblID2.Text;
+this.Application["Description"] = (object) this.lblDescrizione2.Text;
       if (this.Session["Utente"] != null)
         this.CheckUser();
       else
@@ -111,6 +115,7 @@ namespace Article75
       this.Application["SI"] = (object) "SI";
       this.Application["Referendum"] = (object) this.lblTitolo3.Text;
       this.Application["IDReferendum"] = (object) this.lblID3.Text;
+this.Application["Description"] = (object) this.lblDescrizione3.Text;
       if (this.Session["Utente"] != null)
         this.CheckUser();
       else
@@ -122,6 +127,7 @@ namespace Article75
       this.Application["SI"] = (object) "NO";
       this.Application["Referendum"] = (object) this.lblTitolo3.Text;
       this.Application["IDReferendum"] = (object) this.lblID3.Text;
+this.Application["Description"] = (object) this.lblDescrizione3.Text;
       if (this.Session["Utente"] != null)
         this.CheckUser();
       else
