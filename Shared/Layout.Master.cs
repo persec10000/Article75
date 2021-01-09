@@ -13,6 +13,9 @@ namespace Article75
 {
   public class Layout : MasterPage
   {
+    public static string og_title = "";
+    public static string og_description = "";
+
     protected ContentPlaceHolder Header_Layout;
     protected ContentPlaceHolder CSS_Link;
     protected HtmlLink cbx_style;
@@ -24,9 +27,16 @@ namespace Article75
     protected ContentPlaceHolder Footer_Layout;
     protected ContentPlaceHolder JS_Link;
 
+
     protected void Page_Load(object sender, EventArgs e)
     {
-      if ((string) this.Session["Utente"] == null || this.Application["Logged"] == null)
+            if ((string)this.Application["Referendum"] != null && this.Application["Description"] != null)
+            {
+                og_title = this.Application["Referendum"].ToString();
+                og_description = this.Application["Description"].ToString();
+                //this.Response.Write("<script LANGUAGE='JavaScript' >alert('" + og_title + ":" + og_description + " success!')</script>");
+            }
+            if ((string) this.Session["Utente"] == null || this.Application["Logged"] == null)
         return;
       this.lblUtente.Visible = true;
       this.lblUtente.Text = "Benvenuto ";
@@ -43,6 +53,8 @@ namespace Article75
         this.lblUtente.Text += "Membro";
       else
         this.lblUtente.Text += "Anonimo";
+
+      
     }
 
     protected void LogOut_Click(object sender, EventArgs e)

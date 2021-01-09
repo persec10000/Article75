@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- The above 3 meta tags *must* come first in the head -->
 
-        <meta name="description" content="simple description for your site">
+        <meta name="description" content="<%= og_description %>">
         <meta name="keywords" content="keyword1, keyword2">
         <meta name="author" content="Anca Georgeta">
 
@@ -22,13 +22,13 @@
         <meta name="twitter:description" content="Your site description, maximum 140 char "> <!-- maximum 140 char -->
         <meta name="twitter:image" content="assets/img/twittercardimg/twittercard-144-144.png">  <!-- when you post this page url in twitter , this image will be shown -->
         <!-- facebook open graph starts from here, if you don't need then delete open graph related  -->
-        <meta property="og:title" content="Your home page title">
-        <meta property="og:url" content="http://your domain here.com">
+        <meta property="og:title" content="<%= og_title %>">
+        <meta property="og:url" content="http://www.articolo75.it/">
         <meta property="og:locale" content="en_US">
-        <meta property="og:site_name" content="Your site name here">
+        <meta property="og:site_name" content="Articolo75.it">
         <!--meta property="fb:admins" content="" /-->  <!-- use this if you have  -->
         <meta property="og:type" content="website"> <!-- 'article' for single page  -->
-        <meta property="og:image" content="assets/img/opengraph/fbphoto-476-476.png"> <!-- when you post this page url in facebook , this image will be shown -->
+        <meta property="og:image" content="assets/img/favicon/ms-icon-310x310.png"> <!-- when you post this page url in facebook , this image will be shown -->
         <!-- facebook open graph ends here -->
         <!-- desktop bookmark -->
         <meta name="msapplication-TileColor" content="#ffffff">
