@@ -28,7 +28,11 @@
         <meta property="og:site_name" content="Articolo75.it">
         <!--meta property="fb:admins" content="" /-->  <!-- use this if you have  -->
         <meta property="og:type" content="website"> <!-- 'article' for single page  -->
-        <meta property="og:image" content="assets/img/favicon/ms-icon-310x310.png"> <!-- when you post this page url in facebook , this image will be shown -->
+        <!--
+        <meta property="og:image" content="assets/img/favicon/ms-icon-310x310.png">
+            -->
+        <!-- when you post this page url in facebook , this image will be shown -->
+        
         <!-- facebook open graph ends here -->
         <!-- desktop bookmark -->
         <meta name="msapplication-TileColor" content="#ffffff">
@@ -236,7 +240,22 @@
                 <!-- CUSTOM SCRIPT  -->
                 <script src="assets/js/custom.js"></script>
             </asp:ContentPlaceHolder>
+            <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<!--script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="ArCTen3G"></script-->
 
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+            <div class="fb-share-button" 
+data-href="http://www.articolo75.it/" 
+data-layout="button_count">
+</div>
             <!--
             <script id="switcherhandle" type="text/javascript" src="assets/switcher/switcher.js"></script>
             <div class="switcher-loader"><div class="cbx-switcher-area"><div class="cbx-switcher-inner"><a id="cbx-switcher-btn" class="cbx-switcher-btn" href="#"><span class="fa fa-cog fa-spin" aria-hidden="true"></span></a><div id="cbx-switcher-body" class="cbx-switcher-body cbx-hide"><span class="cbx-switcher-text text-center"> Style Switcher</span><ul class="list-unstyled clearfix cbx-switcher-list"><li class="cbx-list-default"><a href="#" class="cbx-switcher-clr-btn" data-color-name="-default"></a></li><li class="cbx-list-red"><a href="#" class="cbx-switcher-clr-btn" data-color-name="-red"></a></li><li class="cbx-list-orange"><a href="#" class="cbx-switcher-clr-btn" data-color-name="-orange"></a></li><li class="cbx-list-blue"><a href="#" class="cbx-switcher-clr-btn" data-color-name="-blue"></a></li><li class="cbx-list-olive"><a href="#" class="cbx-switcher-clr-btn" data-color-name="-olive"></a></li><li class="cbx-list-violet"><a href="#" class="cbx-switcher-clr-btn" data-color-name="-violet"></a></li><li class="cbx-list-pink"><a href="#" class="cbx-switcher-clr-btn" data-color-name="-pink"></a></li><li class="cbx-list-navy"><a href="#" class="cbx-switcher-clr-btn" data-color-name="-navy"></a></li></ul></div></div></div></div>
