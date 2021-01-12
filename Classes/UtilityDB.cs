@@ -346,8 +346,24 @@ namespace Article75
                 else
                 {
                     int idReferendum = int.Parse(IDReferendum.ToString());
-                    ritorno = UpdatingReferendum(idReferendum, 0, SiNo);
-                    return 2;// 3;//2020.1.10
+                    if (logato.Equals("SI"))
+                    {
+                        ritorno = UpdatingReferendum(idReferendum, 0, SiNo);
+                        return 2;
+                    }
+                    else
+                    {
+                        if (Mail)
+                        {
+                            return 4;// already created before. please login or reset password
+                        }
+                        else
+                        {
+                            return 5;// can't be happen!
+                        }
+                    }
+                    //ritorno = UpdatingReferendum(idReferendum, 0, SiNo);
+                    //return 2;// 3;//2020.1.10 
                 }
             }
             catch (Exception ex)
