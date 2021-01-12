@@ -116,8 +116,17 @@ namespace Article75
               this.Session["Utente"] = (object) str1;
               this.Server.Transfer("Referendum.aspx");
               break;
-          }
-        }
+            case 4:
+              MessageBox.Show("Please login with your password before voting.");
+              this.Server.Transfer("Login.aspx");
+              break;
+            case 5:
+                MessageBox.Show("Unknown error. The user id has been deleted by admin. Please contact to supporter.");
+                this.Server.Transfer("Login.aspx");
+                break;
+
+                    }
+                }
       }
     }
 

@@ -114,7 +114,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
                                         </div>
 
                                         <div class="content-line">
-                                            <a href="ReferendaDetail.aspx?id=3&title=Contro Parlamento" style="color:#ffffff;">
+                                            <a href="ReferendaDetail.aspx?id=1&title=Contro Cip6" style="color:#ffffff;">
                                             <asp:Label ID="lblDescrizione2" runat="server" Text="Descrizione2"></asp:Label>
                                                 
                         <asp:Label ID="lblID2" runat="server" Text="ID" Font-Size="6pt" Visible="False"></asp:Label>            
@@ -182,7 +182,8 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
                                         </div>
 
                                         <div class="content-line">
-                                            <a href="ReferendaDetail.aspx?id=1&title=Contro Cip6" style="color:#ffffff;">
+                                            
+                                            <a href="ReferendaDetail.aspx?id=3&title=Contro Parlamento" style="color:#ffffff;">
                                             <asp:Label ID="lblDescrizione3" runat="server" Text="Descrizione3"></asp:Label>
                                                 
                         <asp:Label ID="lblID3" runat="server" Text="ID" Font-Size="6pt" Visible="False"></asp:Label>     
