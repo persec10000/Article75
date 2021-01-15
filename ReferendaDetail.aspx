@@ -35,26 +35,57 @@
                             <div class="meta">
 
                                 <div class="signature-info pull-left">Referendum: <span>SI : 8396</span> vs <span> NO : 5245</span></div>
+                                <!--
                                 <div class="fb-share-button" data-href="http://185.117.152.92:8081/" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F185.117.152.92%3A8081%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-
+                                -->
                                 <ul class="list-unstyled social-area social-area-signature pull-right">
 
-                                    <li><a href="http://www.facebook.com/share.php?u=http://185.117.152.92:8081/ReferendaDetail.aspx" class="facebook"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
-
-
+                                    <li><a href="<%= strShareUrlFacebook %>" class="facebook"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    <!--
+                                    <li><a href="http://www.facebook.com/share.php?u=http://185.117.152.92:8081" class="facebook"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    -->
+                                    <li><a href="<%= strShareUrlTelegram %>" class="telegram"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                                    <!--
+                                    <li><a href="<%= strShareUrlMail %>" class="mail" title="Share by Email">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                        </a></li>
+                                    -->
                                     <li><a href="https://plus.google.com/share?url=http://185.117.152.92:8081/ReferendaDetail.aspx" class="google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
 
                                     <li><a href="http://twitter.com/share?http://185.117.152.92:8081/ReferendaDetail.aspx&text=Referendum&via=Article75" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 
                                     <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://185.117.152.92:8081/ReferendaDetail.aspx&title=Referendum&summary=ReferendumDetail&source=Article75" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 
+                                    <!--
                                     <li><a href="https://telegram.me/share/url?url=http://185.117.152.92:8081/ReferendaDetail.aspx&title=Referendum&summary=ReferendumDetail&source=Article75" class="telegram"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
-
+                                    -->
                                     <!--li><a href="#" class="envelop"><i class="fa fa-envelope" aria-hidden="true"></i></a></li-->
+                                    
+                                    <li>
+<a target="_blank" title="Share with Gmail" 
+href="<%=strShareUrlGmail %>">  
+<img src="http://findicons.com/files/icons/820/simply_google/32/google_gmail.png" alt="gmail" /></a> 
+                                    </li>
+                                    <li>
+<a target="_blank" title="Share with Yahoo mail" 
+href="<%=strShareUrlYahooMail %>">  
+<img src="http://findicons.com/files/icons/832/social_and_web/32/yahoo.png" alt="yahoo" /></a>  
+                                    </li>
+                                    <li>
+<a target="_blank" title="Share with Outlook web"  
+href="<%=strShareUrlOutlookMail %>">  
+<img src="http://findicons.com/files/icons/2795/office_2013_hd/32/outlook.png" alt="Outlook web" /></a>  
+                                    </li>
 
                                 </ul>
-
-
+                                <ul>
+                                <!--
+<a title="Share with Outlook" 
+href="mailto:?subject=vote for this referendum&body=http://185.117.152.92:8081/Referendum.aspx <br/>.I have already voted.">  
+<img src="http://findicons.com/files/icons/2779/simple_icons/64/outlook_64_black.png" alt="outlook" /></a>  
+    -->
+                                    
+                                </ul>
 
                             </div>
 

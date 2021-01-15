@@ -20,6 +20,13 @@ namespace Article75
 
         protected string strTitle;
         protected string strId;
+
+        public static string strShareUrlFacebook;
+        public static string strShareUrlTelegram;
+        public static string strShareUrlMail;
+        public static string strShareUrlGmail;
+        public static string strShareUrlYahooMail;
+        public static string strShareUrlOutlookMail;
         protected void Page_Load(object sender, EventArgs e)
         {
             this.strTitle = this.Request.QueryString["title"];
@@ -30,6 +37,46 @@ namespace Article75
             this.lblTitle.Text = this.strTitle;
             this.lblTitleVideo.Text = this.strTitle;
             this.lblId.Text = this.strId;
+
+            string strShareUrl = this.strTitle;
+            strShareUrl = HttpUtility.UrlEncodeUnicode(strShareUrl);
+
+            strShareUrlFacebook =
+                "http://www.facebook.com/share.php?u="+ HttpUtility.UrlEncodeUnicode("http://185.117.152.92:8081/ReferendaDetail.aspx?id=") +
+                this.strId + "&title=" +
+                strShareUrl;
+            strShareUrlTelegram =
+                "https://telegram.me/share/url?url=http://185.117.152.92:8081/ReferendaDetail.aspx?id=" +
+                this.strId +
+                HttpUtility.UrlEncodeUnicode("&title=") + HttpUtility.UrlEncodeUnicode(HttpUtility.UrlEncodeUnicode(this.strTitle)) +
+                "&text=" + this.Application["Description"].ToString();
+            strShareUrlMail =
+                "mailto:?subject = "+ 
+                this.Application["Description"].ToString()+
+                " & amp; body = Check out this website http://185.117.152.92:8081/";
+            strShareUrlGmail = "https://mail.google.com/mail/?view=cm&su=" +
+                this.Application["Description"].ToString() +
+                "&to&body=" +
+                /*
+                HttpUtility.UrlEncodeUnicode("<a href=\"")+
+                */
+                HttpUtility.UrlEncodeUnicode("http://185.117.152.92:8081/ReferendaDetail.aspx?id=") +
+                this.strId + HttpUtility.UrlEncodeUnicode("&title=") + HttpUtility.UrlEncodeUnicode(HttpUtility.UrlEncodeUnicode(this.strTitle)) +
+                /*
+                HttpUtility.UrlEncodeUnicode("\">Clicca qui</a>") +
+                "<br>.I have already voted. "+*/
+                "&scc=1<mpl=default<mplcache=2&emr=1&osid=1#identifier";
+            strShareUrlYahooMail = "http://compose.mail.yahoo.com/?&Subject="+
+                this.Application["Description"].ToString() +
+                "&To=&Body=" +
+                HttpUtility.UrlEncodeUnicode("http://185.117.152.92:8081/ReferendaDetail.aspx?id=") +
+                this.strId + HttpUtility.UrlEncodeUnicode("&title=") + HttpUtility.UrlEncodeUnicode(HttpUtility.UrlEncodeUnicode(this.strTitle)) ;
+            strShareUrlOutlookMail = "https://mail.live.com/default.aspx?rru=compose&subject=" +
+                this.Application["Description"].ToString() +
+                "&to=&body=" +
+                HttpUtility.UrlEncodeUnicode("http://185.117.152.92:8081/ReferendaDetail.aspx?id=") +
+                this.strId + HttpUtility.UrlEncodeUnicode("&title=") + HttpUtility.UrlEncodeUnicode(HttpUtility.UrlEncodeUnicode(this.strTitle)) +
+                "&lc=1033&id=64855&mkt=en-us&cbcxt=mai";
         }
         protected void BtnNo1_Click(object sender, EventArgs e)
         {
