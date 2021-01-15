@@ -4,40 +4,41 @@
 <head runat="server">
     <title></title>
     <asp:ContentPlaceHolder ID="Header_Layout" runat="server">
-        <meta http-equiv="content-type" content="text/html; charset=utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- The above 3 meta tags *must* come first in the head -->
 
-        <meta name="description" content="<%= og_description %>">
-        <meta name="keywords" content="keyword1, keyword2">
-        <meta name="author" content="Anca Georgeta">
+        <meta name="description" content="<%= og_description %>"/>
+        <meta name="keywords" content="keyword1, keyword2"/>
+        <meta name="author" content="Anca Georgeta" />
 
         <!-- twitter card starts from here, if you don't need remove this section -->
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="">
-        <meta name="twitter:creator" content="">
-        <meta name="twitter:url" content="http://yourdomain.com">
-        <meta name="twitter:title" content="Your home page title, max 140 char"> <!-- maximum 140 char -->
-        <meta name="twitter:description" content="Your site description, maximum 140 char "> <!-- maximum 140 char -->
-        <meta name="twitter:image" content="assets/img/twittercardimg/twittercard-144-144.png">  <!-- when you post this page url in twitter , this image will be shown -->
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:site" content=""/>
+        <meta name="twitter:creator" content=""/>
+        <meta name="twitter:url" content="http://185.117.152.92:8081/"/>
+        <meta name="twitter:title" content="Your home page title, max 140 char"/> <!-- maximum 140 char -->
+        <meta name="twitter:description" content="Your site description, maximum 140 char "/> <!-- maximum 140 char -->
+        <meta name="twitter:image" content="assets/img/twittercardimg/twittercard-144-144.png"/>  <!-- when you post this page url in twitter , this image will be shown -->
         <!-- facebook open graph starts from here, if you don't need then delete open graph related  -->
-        <meta property="og:title" content="<%= og_title %>">
-        <meta property="og:url" content="http://www.articolo75.it/">
-        <meta property="og:locale" content="en_US">
-        <meta property="og:site_name" content="Articolo75.it">
+        <meta property="og:title" content="<%= og_title %>"/>
+        <meta property="og:url" content="http://www.articolo75.it/"/>
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:site_name" content="Articolo75.it"/>
         <!--meta property="fb:admins" content="" /-->  <!-- use this if you have  -->
-        <meta property="og:type" content="website"> <!-- 'article' for single page  -->
+        <meta property="og:type" content="website" /> <!-- 'article' for single page  -->
         <!--
         <meta property="og:image" content="assets/img/favicon/ms-icon-310x310.png">
-            -->
-        <!-- when you post this page url in facebook , this image will be shown -->
+        -->
+        <meta property="og:image" content="http://185.117.152.92:8081/assets/img/favicon/ms-icon-310x310.png" />
         
+        <!-- when you post this page url in facebook , this image will be shown -->
         <!-- facebook open graph ends here -->
         <!-- desktop bookmark -->
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+        <meta name="msapplication-TileColor" content="#ffffff"/>
+        <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png"/>
+        <meta name="theme-color" content="#ffffff"/>
     </asp:ContentPlaceHolder>
     <asp:ContentPlaceHolder ID="CSS_Link" runat="server">
         <!-- icons & favicons -->
@@ -242,8 +243,8 @@
             </asp:ContentPlaceHolder>
             <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
-<!--script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="ArCTen3G"></script-->
-
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="ArCTen3G"></script>
+    <!--
 <script>(function(d, s, id) {
 var js, fjs = d.getElementsByTagName(s)[0];
 if (d.getElementById(id)) return;
@@ -251,7 +252,7 @@ js = d.createElement(s); js.id = id;
 js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-
+            -->
             <div class="fb-share-button" 
 data-href="http://www.articolo75.it/" 
 data-layout="button_count">
