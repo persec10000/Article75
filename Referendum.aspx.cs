@@ -57,7 +57,7 @@ namespace Article75
       this.Application["SI"] = (object) "SI";
       this.Application["Referendum"] = (object) this.lblTitolo1.Text;
       this.Application["IDReferendum"] = (object) this.lblID1.Text;
-this.Application["Description"] = (object) this.lblDescrizione1.Text;
+      this.Application["Description"] = (object) this.lblDescrizione1.Text;
       if (this.Session["Utente"] != null)
         this.CheckUser();
       else
@@ -186,8 +186,17 @@ this.Application["Description"] = (object) this.lblDescrizione3.Text;
             }
             this.Server.Transfer("Referendum.aspx");
               break;
-          }
-        }
+            case 4:
+                MessageBox.Show("Please login with your password before voting.");
+                this.Server.Transfer("Login.aspx");
+                break;
+            case 5:// confirm mail link.
+                MessageBox.Show("Controlla la posta elettronica, clicca sul link per continuare ad utilizzare questo sito.");
+                //MessageBox.Show("Unknown error. The user id has been deleted by admin. Please contact to supporter.");
+                this.Server.Transfer("Referendum.aspx");
+                break;
+                    }
+                }
       }
     }
 

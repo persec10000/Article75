@@ -150,6 +150,16 @@ namespace Article75
                             }
                             this.Server.Transfer("Referendum.aspx");
                             break;
+                        case 4:
+                            MessageBox.Show("Please login with your password before voting.");
+                            this.Server.Transfer("Login.aspx");
+                            break;
+                        case 5:// confirm mail link.
+                            MessageBox.Show("Controlla la posta elettronica, clicca sul link per continuare ad utilizzare questo sito.");
+                            //MessageBox.Show("Unknown error. The user id has been deleted by admin. Please contact to supporter.");
+                            this.Server.Transfer("Referendum.aspx");
+                            break;
+
                     }
                 }
             }

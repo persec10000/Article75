@@ -121,8 +121,9 @@ namespace Article75
               this.Server.Transfer("Login.aspx");
               break;
             case 5:
-                MessageBox.Show("Unknown error. The user id has been deleted by admin. Please contact to supporter.");
-                this.Server.Transfer("Login.aspx");
+                //MessageBox.Show("Unknown error. The user id has been deleted by admin. Please contact to supporter.");
+                MessageBox.Show("Controlla la posta elettronica, clicca sul link per continuare ad utilizzare questo sito.");
+                this.Server.Transfer("Referendum.aspx");
                 break;
 
                     }
