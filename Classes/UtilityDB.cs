@@ -46,7 +46,7 @@ namespace Article75
             //
         }
 
-        public bool CheckEmail(string email) // Check Email
+        public int CheckEmail(string email) // Check Email
         {
             string strConn = ConfigurationManager.ConnectionStrings["connDB"].ConnectionString;
             OleDbConnection conn = new OleDbConnection(strConn);
@@ -67,21 +67,25 @@ namespace Article75
                 if (dr.Read())
                 {
                     _IDUte = dr.GetValue(0).ToString();
+                    string strpw = dr.GetValue(4).ToString();
                     dr.Close();
                     conn.Close();
-                    return true;
+                    if (strpw.Length > 1)
+                        return 1;
+                    else
+                        return -1;
                 }
                 else
                 {
                     dr.Close();
                     conn.Close();
-                    return false;
+                    return 0;
                 }
             }
             catch (Exception ex)
             {
                 //MessageBox.Show(ex.Message);
-                return false;
+                return 0;
             }
             finally
             {
@@ -193,35 +197,35 @@ namespace Article75
             try
             {
                 int records = 0;
-                bool Mail = false;
+                int Mail = 0;
                 Mail = CheckEmail(email);
 
                 // Non ho la mail, quindi nuovo utente da registrare.
                 // I don't have the email, so new user to register.
 
-                if (!Mail)
+                if (Mail == 0)
                 {
-                    
+
                     conn.Open();
-                    
+
                     using (OleDbCommand insertCommand = new OleDbCommand("INSERT INTO Utenti ([Utente],[Comune],[Email],[Token],[Nome],[Cognome],[Password]) VALUES (?,?,?,?,?,?,?)", conn))
                     {
-                        
+
                         insertCommand.Parameters.AddWithValue("@Utente", "Anonimo");
-                        
+
                         insertCommand.Parameters.AddWithValue("@Comune", strComune);
                         insertCommand.Parameters.AddWithValue("@Email", email);
-                        
+
                         insertCommand.Parameters.AddWithValue("@Token", Token);
-                        
+
                         insertCommand.Parameters.AddWithValue("@Nome", strFirstName);
-                        
+
                         insertCommand.Parameters.AddWithValue("@Cognome", strLastName);
-                        
+
                         insertCommand.Parameters.AddWithValue("@Password", strPassword);
-                        
+
                         insertCommand.ExecuteNonQuery();
-                        
+
                         insertCommand.Dispose();
                     }
 
@@ -240,7 +244,7 @@ namespace Article75
                     cmd.Dispose();*/
                     conn.Close();
                     //System.Web.HttpContext.Current.Response.Write("<SCRIPT LANGUAGE='JavaScript'>alert('UtilityDB:step11.')</SCRIPT>");
-                    nSuccess = CheckEmail(email);
+                    nSuccess = CheckEmail(email) != 0;
 
                     if (nSuccess)
                     {
@@ -283,19 +287,19 @@ namespace Article75
             string Token = Key.GetUniqueKey(15, false);
             string strConn = ConfigurationManager.ConnectionStrings["connDB"].ConnectionString;
             OleDbConnection conn = new OleDbConnection(strConn);
-            
+
             //SendEmailConfirm("persec10000@gmail.com", "fL92P34IhAWQHDJ");
             //alert('send mail: ');
             try
             {
                 int records = 0;
-                bool Mail = false;
+                int Mail = 0;
                 Mail = CheckEmail(email);
 
                 // Non ho la mail, quindi nuovo utente da registrare.
                 // I don't have the email, so new user to register.
 
-                if (!Mail)
+                if (Mail == 0)
                 {
                     conn.Open();
 
@@ -324,42 +328,79 @@ namespace Article75
 
                 if (!referendum)//there is no in ReferendumUtenti
                 {
-                    if (logato.Equals("SI"))
-                        ritorno = CountingReferendum(IDReferendum, Mail, SiNo, true);
-                    else
+                    if (logato.Equals("SI")) // already login
                     {
-                        if (Mail)
-                            ritorno = CountingReferendum(IDReferendum, Mail, SiNo, true);
-                        else//at first email
+                        if (Mail == 1)
                         {
+                            ritorno = CountingReferendum(IDReferendum, Mail != 0, SiNo, true);
+                            return 2;
+                        }
+                        else if (Mail == -1)
+                            return 5;
+                        else // Mail == 0, 
+                        {
+                            return 1;//logic err
+                        }
+                    }
+                    else // not login in yet
+                    {
+                        if (Mail == 0)
+                        {
+                            ritorno = CountingReferendum(IDReferendum, Mail != 0, SiNo, true);
                             CUtente ute = new CUtente();
                             ute.DammiUtente(email, 0);
                             _IDUte = ute.IDUTE;
-                            CountingReferendum(IDReferendum, Mail, SiNo, false);
                             SendEmailConfirm(email, Token);
                             return 0;
                         }
+                        else//at first email
+                        {
+                            if (Mail == 1)
+                                return 4;// already created before. please login or reset password
+                            else
+                                return 5;
+                            /*CUtente ute = new CUtente();
+                            ute.DammiUtente(email, 0);
+                            _IDUte = ute.IDUTE;
+                            CountingReferendum(IDReferendum, Mail != 0, SiNo, false);
+                            SendEmailConfirm(email, Token);
+                            return 0;*/
+                        }
                     }
 
-                    return ritorno;
+                    //return ritorno;
                 }
-                else
+                else // already voted.
                 {
                     int idReferendum = int.Parse(IDReferendum.ToString());
-                    if (logato.Equals("SI"))
+                    if (logato.Equals("SI")) // already login in 
                     {
-                        ritorno = UpdatingReferendum(idReferendum, 0, SiNo);
-                        return 2;
+                        if(Mail == 0)
+                        {
+                            return 1;// logic err
+                        }else if (Mail==1)
+                        {
+                            ritorno = UpdatingReferendum(idReferendum, 0, SiNo);
+                            return 2;
+                        }
+                        else // -1
+                        {
+                            return 5;// confirm email.
+                        }
+                        
                     }
-                    else
+                    else // not login yet
                     {
-                        if (Mail)
+                        if (Mail == 1)
                         {
                             return 4;// already created before. please login or reset password
+                        } else if(Mail==-1)
+                        {
+                            return 5;// confirm email
                         }
                         else
                         {
-                            return 5;// can't be happen!
+                            return 1;// logic err // can't be happen!
                         }
                     }
                     //ritorno = UpdatingReferendum(idReferendum, 0, SiNo);
@@ -390,13 +431,13 @@ namespace Article75
             try
             {
                 int records = 0;
-                bool Mail = false;
+                int Mail = 0;
                 Mail = CheckEmail(email);
 
                 // Non ho la mail, quindi nuovo utente da registrare.
                 // I don't have the email, so new user to register.
 
-                if (!Mail)
+                if (Mail == 0)
                 {
                     conn.Open();
 
@@ -447,7 +488,7 @@ namespace Article75
                     else
                         CheckEmail(email);
                 }
-                SendEmailConfirm(email, Token);                
+                SendEmailConfirm(email, Token);
 
                 return 3;
             }
@@ -562,7 +603,7 @@ namespace Article75
 
         private int CountingReferendum(string IDReferendum, bool Mail, string SiNo, bool utente)//CountingReferendum
         {//CountingReferendum
-            int records = 0; 
+            int records = 0;
             string strConn = ConfigurationManager.ConnectionStrings["connDB"].ConnectionString;
             OleDbConnection conn = new OleDbConnection(strConn);
 
@@ -691,7 +732,7 @@ namespace Article75
         }
 
 
-        public void SendEmailConfirm(string email, string Token, string strpassword="")//SendEmail Confirm
+        public void SendEmailConfirm(string email, string Token, string strpassword = "")//SendEmail Confirm
         {
             //string collegamento = "http://www.Articolo75.it/ConfermaToken.aspx?codice=" + Token;
             //string collegamento = "http://localhost:65343/ConfermaToken.aspx?codice=" + Token;
