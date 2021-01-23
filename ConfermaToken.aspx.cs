@@ -31,7 +31,11 @@ namespace Article75
       CUtente cutente = new CUtente();
       utilityDb.SendPassword(email);
       this.Session["Utente"] = (object) email;
-      this.lblUtente.Visible = true;
+        this.Session["UtenteEmail"] = (object)email;
+        //this.Session["ID"] = (object)cutente.IDUTE;
+        //    this.Application["Logged"] = (object)"YES";
+
+            this.lblUtente.Visible = true;
       this.lblUtente.Text = "Benvenuto Utente " + (string) this.Session["Utente"];
     this.Response.Write("<script LANGUAGE='JavaScript' >alert('Successfully registered! Please check your email in order to get your password.')</script>");
     this.Server.Transfer("Referendum.aspx");//this.Server.Transfer("Login.aspx"); // 2021.1.8 7AM
